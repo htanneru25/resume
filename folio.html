@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harika's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      /* Define custom CSS styles */
+      #main {
+          color: white;
+          text-align: center;
+      }
+
+      .header h1 {
+          font-size: 52px; /* Adjust font size as needed */
+          color: white; /* White color for the heading */
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      }
+
+      .header p {
+          font-size: 36px; /* Adjust font size as needed */
+          color: darkgoldenrod; /* Different color for the paragraph */
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      }
+      #about p {
+            font-size: 28px; /* Adjust font size as needed */
+            color: white; /* Black color for the text */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        /* Define a class for yellow color */
+        .yellow-text {
+            color: darkgoldenrod; /* Yellow color for the text */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        .darkgoldenrod {
+            color: darkgoldenrod; /* Darkgoldenrod color for the text */
+        }
+  </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1J9NcXtYzQtJ_YYW8OyO31bup1_vdgJBZ/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="header" id="home">
+          <br><br><center><h1 class="w3-jumbo"><span class="w3-hide-small" style="color: white;">Hello there!</span> I'm Harika</h1>
+          <p style="color: darkgoldenrod;"><strong>Graduate student, Cloud Practitioner <br> and Ex-Amazonian</strong></p></center>
+      </header>
+      <div class="container">
+        <div class="black-side">
+            <div class="content" id="about">
+                <div class="about-content">
+                    <p>I’m a graduate student at the Eastern Illinois University- Charleston studying <span class="darkgoldenrod">Computer Technology</span> and deeply passionate about <span class="darkgoldenrod">cloud computing</span>. <br> <br> My expertise extends to <span class="darkgoldenrod">data science and big data areas</span>. I am always on the lookout for new ways to use technology to <span class="darkgoldenrod">solve real-world problems</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="white-side">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/htanneru25/resume/main/Harika%20Image.jpeg" alt="image" class="image" width="450" height="450">
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+      <div class="split left">
+          <div class="darkgoldenrod-side">
+              <div class="icon-section">
+                  <!-- Icons -->
+                  <div class="icon-row">
+                      <div class="icon-container">
+                          <img src="cloud_icon.jpg" alt="Cloud Architecture Icon" class="icon">
+                          <p class="icon-label">Design Cloud Architecture</p>
+                      </div>
+                      <div class="icon-container">
+                          <img src="frontend.jpg" alt="Frontend Development Icon" class="icon">
+                          <p class="icon-label">Front-End Development</p>
+                      </div>
+                  </div>
+                  <!-- Second line of icons -->
+                  <div class="icon-row">
+                      <div class="icon-container">
+                          <img src="cicd.jpg" alt="CI/CD Icon" class="icon">
+                          <p class="icon-label">Automate CI/CD</p>
+                      </div>
+                      <div class="icon-container">
+                          <img src="docker.jpg" alt="Docker Icon" class="icon">
+                          <p class="icon-label">Containerizing with Docker</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="split right">
+          <div class="white-side">
+              <p>With <span class="blue">3+ years of IT industry experience,</span> I spearheaded Quality Analysis at Amazon, overseeing the <span class="blue">AIC program and Root Cause Analysis.</span><br><br>
+                Leveraging independent learning, I honed expertise in cloud-native platforms, API design, and data analytics at scale, showcasing proficiency in <span class="blue">CI/CD tools and automation scripting.</span><br><br>
+                Demonstrating a strong grasp of AWS services like <span class="blue">Elastic Block Store and EC2,</span> I specialize in designing and implementing secure and scalable <span class="blue">AWS VPC architectures.</span></p>
+          </div>
+      </div>
+  </div>
+     <div class="lightskyblue-section">
+       <h2>My technological arsenal includes the following:</h2>
+    </div>
+    <div class="white-section">
+      <div class="image-container">
+        <img src="pp.png" alt="Image 1">
+        <img src="aaws.png" alt="Image 2">
+        <img src="html.jpg" alt="Image 3">
+        <img src="github.png" alt="Image 4">
+        <img src="mysql.jpg" alt="Image 5">
+    </div>
+   </div>
+   <div class="lightskyblue-section">
+    <h2>Here are some of my works</h2>
+ </div>
+ 
+ <div class="Projects" id="project">
+  <div class="half-split">
+      <div class="image-side">
+          <img src="cloud-cost-optimization.jpg" alt="Image">
+      </div>
+      <div class="text-side">
+          <h2> Cloud cost optimization</h2>
+          <p>Implemented an automated solution using AWS Lambda to identify and delete stale Elastic Block Store (EBS) snapshots, resulting in significant cost savings and improved resource management. </p>
+          <button class="button"><a href="cloudcostoptimization.html" target="_blank">Click me to know more!!!</button></a>
+      </div>
+  </div>
+
+  <div class="half-split">
+      <div class="text-side">
+          <h2>VPC with servers in private subnets and NAT</h2>
+          <p>Designed and implemented a Virtual Private Cloud (VPC) architecture for a 2-tier application, utilizing private subnets for enhanced security and network isolation.</p>
+          <button class="button"><a href="vpc.html" target="_blank">Click me to know more!!!</button></a>
+      </div>
+      <div class="image-side">
+          <img src="vpc.png" alt="Image">
+      </div>
+  </div>
+</div>
+    <div class="black-background">
+      <div class="quote-box">
+      <p>"As a cloud enthusiast, I'm driven by the endless possibilities of architecting cloud infrastructure, transforming visions into reality, one innovation at a time."</p>
+      </div>
+    <p>Driven to create a positive impact, I am actively seeking my next opportunity. 
+      If my experience resonates with you, feel free to contact me at tanneruharika08@gmail.com</p>
+  </div>
+  <div class="linkedin-section">
+    <a href="https://www.linkedin.com/in/harika-tanneru-676b96157/" class="linkedin-link" target="_blank"><span class="blue">LinkedIn</span></a>
+    <a href="mailto:tanneruharika08@gmail.com" class="email-link" target="_blank">Email</a>
+</div>
+
+
+  
+
+    
+</body>  
+</html>
