@@ -335,40 +335,34 @@ nav ul li a:hover {
     color: white; /* Set the color of the letters */
     z-index: 999; /* Ensure the HT is on top of other elements */
 }
-@media only screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens (e.g., mobile devices) */
-
+@media only screen and (min-device-width: 926px) and (max-device-width: 926px) and (orientation: portrait) {
+    /* Adjust styles for iPhone 14 landscape view */
     .header h1 {
-        font-size: 36px;
-    }
-
-    .header p {
         font-size: 24px;
     }
 
+    .header p {
+        font-size: 18px;
+    }
+
     #about p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .split {
         width: 100%;
-        padding: 10px;
-    }
-
-    .Projects .half-split {
-        flex-direction: column;
     }
 
     .Projects .image-side img {
-        margin-left: 0;
+        margin-bottom: 10px;
     }
 
     .Projects .text-side {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .button {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .black-background {
@@ -378,14 +372,13 @@ nav ul li a:hover {
 
     .linkedin-link,
     .email-link {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .ht-logo {
-        font-size: 30px;
+        font-size: 24px;
     }
 }
-
 
 
 
