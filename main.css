@@ -379,6 +379,20 @@ nav ul li a:hover {
     .ht-logo {
         font-size: 24px;
     }
+    .half-split {
+        flex-direction: column;
+    }
+
+    .Projects .image-side img {
+        width: 100%; /* Set the width of the image to 100% */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* Remove margins */
+    }
+
+    .Projects .text-side {
+        padding: 20px; /* Add padding for better spacing */
+    }
+
 }
 
 
