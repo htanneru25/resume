@@ -335,7 +335,56 @@ nav ul li a:hover {
     color: white; /* Set the color of the letters */
     z-index: 999; /* Ensure the HT is on top of other elements */
 }
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens (e.g., mobile devices) */
 
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .header p {
+        font-size: 24px;
+    }
+
+    #about p {
+        font-size: 20px;
+    }
+
+    .split {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Projects .half-split {
+        flex-direction: column;
+    }
+
+    .Projects .image-side img {
+        margin-left: 0;
+    }
+
+    .Projects .text-side {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    .black-background {
+        padding: 30px;
+        font-size: 24px;
+    }
+
+    .linkedin-link,
+    .email-link {
+        font-size: 24px;
+    }
+
+    .ht-logo {
+        font-size: 30px;
+    }
+}
 
 
 
