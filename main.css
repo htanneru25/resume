@@ -349,19 +349,7 @@ nav ul li a:hover {
     #about p {
         font-size: 16px;
     }
-
-    .split {
-        width: 50%;
-    }
-
-    .Projects .image-side img {
-        margin-bottom: 10px;
-    }
-
-    .Projects .text-side {
-        font-size: 16px;
-    }
-
+    
     .button {
         font-size: 16px;
     }
@@ -380,19 +368,20 @@ nav ul li a:hover {
         font-size: 24px;
     }
     .half-split {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .Projects .image-side img {
-        width: 100%; /* Set the width of the image to 100% */
+        width: 90%; /* Set the width of the image to 90% */
         height: auto; /* Maintain aspect ratio */
-        margin: 0; /* Remove margins */
+        margin-bottom: 20px; /* Add margin to separate image from text */
     }
 
     .Projects .text-side {
-        padding: 20px; /* Add padding for better spacing */
+        width: 90%; /* Set the width of the text side to 90% */
     }
-
 }
 
 
