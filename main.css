@@ -337,6 +337,7 @@ nav ul li a:hover {
 }
 /* iPhone 14 Portrait View */
 @media only screen and (min-device-width: 700px) and (max-device-width: 926px) and (orientation: portrait) {
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     /* Adjust styles for iPhone 14 portrait view */
     .header h1 {
         font-size: 24px;
@@ -346,339 +347,45 @@ nav ul li a:hover {
         font-size: 18px;
     }
 
-   .container {
-    display: flex;
-    height: 100%;
-}
+   .about p {
+        font-size: 16px;
+    }
 
-.black-side {
-    flex: 1;
-    background-color: black;
-}
+    .button {
+        font-size: 16px;
+    }
 
-.white-side {
-    flex: 1;
-    background-color: white;
-}
+    .black-background {
+        background-color: black;
+        color: white; /* Set text color to white for better visibility */
+        padding: 50px 70px; /* Adjusted padding */
+        text-align: center; /* Add padding to create space between content and edges */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 32px;
+    }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
+    .linkedin-link,
+    .email-link {
+        font-size: 18px;
+    }
 
-nav ul li {
-    float: right;
-}
+    .ht-logo {
+        font-size: 24px;
+    }
+    .half-split {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-}
+    .Projects .image-side img {
+        width: 90%; /* Set the width of the image to 90% */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add margin to separate image from text */
+    }
 
-nav ul li a:hover {
-    background-color: black;
-}
-.split {
-    width: 50%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.portfolio {
-    display: flex;
-}
+    .Projects .text-side {
+        width: 90%; /* Set the width of the text side to 90% */
+    }
 
-.split.left {
-    width: 48.5%;
-    
 }
-
-.split.right {
-    width: 51.5%;
-}
-
-.blue {
-    color: blue;
-}
-.white-side p {
-    color: black;
-    font-size: 27.3px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-
-
-.left {
-    background-color: darkgoldenrod;
-}
-
-.right {
-    background-color: white;
-}
-
-.darkgoldenrod-side {
-    padding: 20px;
-    color: white;
-    text-align: center;
-}
-
-.white-side {
-    padding: 20px;
-}
-
-.icon-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.icon-row {
-    display: flex;
-    justify-content: space-between; /* Evenly spread icons */
-    flex-wrap: wrap; /* Wrap icons to next line */
-    margin-bottom: 20px;
-    
-}
-
-.icon-container {
-    width: 23%; /* Adjust width to evenly spread icons */
-    text-align: center;
-}
-
-.icon-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-.content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-}
-
-.about-content {
-    flex: 1;
-}
-
-.image-container {
-    flex: 1;
-    text-align: center;
-}
-
-.image {
-    max-width: 90%;
-    height: auto;
-}
-.sidebar-item-large {
-    font-size: 20px; /* Adjust font size as needed */
-    padding: 15px; /* Adjust padding as needed */
-    display: flex;
-    align-items: center;
-}
-
-.circle {
-    width: 50px; /* Adjust circle size as needed */
-    height: 50px; /* Adjust circle size as needed */
-    border-radius: 50%; /* Create circular shape */
-    background-color: darkgoldenrod; /* Background color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.circle i {
-    color: white; /* Icon color */
-}
-.icon-section {
-    display: flex;
-    flex-wrap: wrap; /* Allow icons to wrap to the next line */
-    justify-content: space-between; /* Evenly distribute icons */
-}
-
-.icon-container {
-    width: 48%; /* Adjust width to fit two icons side by side */
-    text-align: center;
-    margin-bottom: 20px; /* Add margin between icons */
-}
-
-.icon-container img {
-    width: 100px; /* Adjust icon size */
-    height: auto;
-}
-.icon-section {
-    padding: 20px; /* Add padding to the icon section */
-}
-
-.icon-row {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 20px; /* Increase margin between rows */
-   
-}
-
-.icon-container {
-    margin: 20 20px; /* Adjust the margin to increase or decrease space between icons */
-}
-.lightskyblue-section {
-    background-color: rgb(49, 101, 197);
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 19px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    
-}
-
-.lightskyblue-section h2 {
-    color: white; /* Set the color of the heading to white */
-}
-.white-section {
-    background-color: white;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 19px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.white-section .image-container {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around; /* Add space between the images */
-}
-
-.white-section .image-container img {
-    width: 100px; /* Set a fixed width for each image */
-    height: 100px; /* Set a fixed height for each image */
-    margin-right: 10px; /* Add some space between each image */
-}
-
-.Projects .half-split {
-    display: flex;
-    align-items: center;
-    background-color: white;
-}
-
-.Projects .image-side img {
-    width: 590px; /* Set the width of the image */
-    height: 500px; /* Maintain aspect ratio */
-    margin-right: 5px; /* Add space to the right of the image */
-    margin-left: 20px; /* Add space to the left of the image */
-    margin-top: 20px;
-}
-
-.Projects .text-side {
-    font-size: 26px;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.button {
-    background-color: black; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.button a {
-    color: white;
-    text-decoration: none; /* Remove underline from links within buttons */
-}
-
-.black-background {
-    background-color: black;
-    color: white; /* Set text color to white for better visibility */
-    padding: 50px 70px; /* Adjusted padding */
-    text-align: center; /* Add padding to create space between content and edges */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 32px;
-}
-
-.quote-box {
-    background-color: rgb(176, 176, 245);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.linkedin-section {
-    text-align: center;
-    margin-top: 15px; /* Adjust margin-top as needed */
-}
-
-.linkedin-link {
-    color: white;
-    text-decoration: none;
-    background-color: black; /* LinkedIn brand color */
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 32px;
-}
-
-.linkedin-link:hover {
-    background-color: black; /* Darker shade when hovered */
-}
-.contact-section {
-    display: flex;
-    align-items: center;
-}
-
-.linkedin-link,
-.email-link {
-    margin-right: 20px; 
-    color: blue;
-    text-decoration: none;
-    background-color: black; /* LinkedIn brand color */
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 32px;
-/* Adjust spacing between the links */
-}
-
-.email-link .email-logo {
-    display: none; /* Hide the email logo */
-}
-
-.email-link:hover .email-logo {
-    display: inline; /* Show the email logo on hover */
-}
-.ht-logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;/* Use Montserrat font for the letters HT */
-    font-size: 45px; /* Adjust font size as needed */
-    color: white; /* Set the color of the letters */
-    z-index: 999; /* Ensure the HT is on top of other elements */
-}
-}
-
-
-
-
-
-
-
-
-
