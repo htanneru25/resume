@@ -346,7 +346,9 @@ nav ul li a:hover {
     }
 
     /* Adjust split sections for smaller screens */
-    
+    .portfolio {
+    display: flex;
+}
 
     /* Adjust icon container width for smaller screens */
     .icon-container {
