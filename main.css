@@ -336,9 +336,30 @@ nav ul li a:hover {
     z-index: 999; /* Ensure the HT is on top of other elements */
 }
 /* iPhone 14 Portrait View */
-@media only screen and (min-device-width: 700px) and (max-device-width: 926px) and (orientation: portrait) {
+@media only screen and (max-width: 600px){
     
     /* Adjust styles for iPhone 14 portrait view */
+     .container {
+        flex-direction: column;
+    }
+    
+    .split {
+        width: 100%;
+    }
+    
+    .split.left,
+    .split.right {
+        width: 100%;
+    }
+    
+    .icon-container {
+        width: 48%;
+    }
+    
+    .lightskyblue-section,
+    .white-section {
+        height: auto;
+    }
     .header h1 {
         font-size: 24px;
     }
@@ -377,6 +398,16 @@ nav ul li a:hover {
         flex-direction: column;
         align-items: center;
     }
+    .content,
+    .about-content,
+    .image-container {
+        padding: 10px;
+    }
+    .quote-box {
+        padding: 10px;
+        margin: 30px;
+    }
+    
 
     .Projects .image-side img {
         width: 90%; /* Set the width of the image to 90% */
