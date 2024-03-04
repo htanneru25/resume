@@ -337,82 +337,108 @@ nav ul li a:hover {
 }
 /* Mobile responsiveness */
 
+/* Mobile responsiveness */
+
 @media only screen and (max-width: 600px) {
+    /* Container */
     .container {
         flex-direction: column;
     }
 
+    /* Icon Container */
     .icon-container {
         width: 48%;
     }
 
-    .lightskyblue-section,
-    .white-section {
-        /* height: auto; */
-    }
-
+    /* White Section */
     .white-section {
         background-color: white;
         padding: 20px;
     }
 
+    /* Light Sky Blue Section */
     .lightskyblue-section {
         background-color: lightskyblue;
         padding: 20px;
         margin-top: 20px;
     }
 
+    /* Dark Goldenrod Side */
     .darkgoldenrod-side {
         display: flex;
         justify-content: space-between;
     }
 
+    /* Dark Goldenrod Side Images */
     .darkgoldenrod-side img {
         width: calc(25% - 10px);
         height: auto;
         margin-right: 10px;
     }
 
+    /* Portfolio Text Side */
     .portfolio .text-side {
         margin-top: 20px;
     }
 
+    /* Portfolio Image Side Images */
     .portfolio .image-side img {
         width: calc(25% - 10px);
         height: auto;
         margin-left: 10px;
     }
 
+    /* Content, About Content, Image Container */
     .content,
     .about-content,
     .image-container {
         padding: 10px;
     }
 
+    /* Button */
     .button {
         padding: 10px 20px;
         font-size: 20px;
     }
 
+    /* Black Background */
     .black-background {
         padding: 30px;
         font-size: 24px;
     }
 
+    /* Quote Box */
     .quote-box {
         padding: 10px;
         margin: 30px;
     }
 
+    /* LinkedIn Link, Email Link */
     .linkedin-link,
     .email-link {
         padding: 10px 15px;
         font-size: 20px;
     }
 
+    /* HT Logo */
     .ht-logo {
         font-size: 35px;
     }
+
+    /* Dark Goldenrod Background Images */
+    .darkgoldenrod-side img {
+        width: calc(25% - 10px);
+        height: auto;
+        margin-right: 10px;
+    }
+
+    /* Portfolio Image Side Images */
+    .portfolio .image-side img {
+        width: calc(25% - 10px);
+        height: auto;
+        margin-left: 10px;
+    }
 }
+
 
 
