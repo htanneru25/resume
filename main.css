@@ -337,148 +337,123 @@ nav ul li a:hover {
 }
 /* Mobile responsiveness */
 
+/* Mobile responsiveness */
+
 @media only screen and (max-width: 600px) {
     /* Container */
-     .container {
-        flex-direction: column;
-    }
-
-    /* Spacing between image and text content */
-    .portfolio .text-side {
-        margin-bottom: 20px; /* Add spacing below text content */
-    }
-
-    /* Ensure proper alignment of projects section */
-    .Projects .half-split {
-        flex-direction: column; /* Display text and image sections in a column */
-    }
-
-    /* Adjust alignment of text content in projects section */
-    .Projects .text-side {
-        text-align: center; /* Center align text content */
-    }
-
-    /* Adjust alignment of image content in projects section */
-    .Projects .image-side {
-        display: flex;
-        justify-content: center; /* Center align image content */
-    }
-
-    /* Adjust image size in projects section */
-    .Projects .image-side img {
-        max-width: 100%; /* Set maximum width for images */
-        height: auto; /* Maintain aspect ratio */
-    }
-}
     .container {
         flex-direction: column;
     }
 
-    /* Icon Container */
-    .icon-container {
-        width: 48%;
-    }
-
-    /* White Section */
-    .white-section {
+    /* White Side */
+    .white-side {
         background-color: white;
-        padding: 90px;
+        padding: 20px;
+        text-align: center; /* Center align content */
     }
 
-    /* Light Sky Blue Section */
-    .lightskyblue-section {
-        background-color: lightskyblue;
-        padding: 20px;
-        margin-top: 90px;
+    /* Portfolio Section */
+    .portfolio {
+        padding: 20px; /* Add padding to create space */
     }
 
     /* Dark Goldenrod Side */
     .darkgoldenrod-side {
+        padding: 20px; /* Add padding to create space */
+    }
+
+    /* Icon Section */
+    .icon-section {
         display: flex;
-        justify-content: space-between;
-        padding: 70px;
-    
+        flex-direction: column;
+        align-items: center; /* Center align icons */
+    }
 
-    /* Dark Goldenrod Side Images */
-    .darkgoldenrod-side img {
-        width: calc(25% - 10px);
+    /* Icon Row */
+    .icon-row {
+        display: flex;
+        justify-content: center; /* Center align icons */
+        flex-wrap: wrap; /* Wrap icons to next line */
+        margin-bottom: 10px; /* Add margin between rows */
+    }
+
+    /* Icon Container */
+    .icon-container {
+        width: 50%; /* Adjust width to fit two icons side by side */
+        text-align: center;
+        margin-bottom: 10px; /* Add margin between icons */
+    }
+
+    /* Icon Label */
+    .icon-label {
+        font-size: 14px; /* Adjust font size */
+    }
+}
+  /* White Side */
+    .white-side {
+        background-color: white;
+        padding: 20px;
+        text-align: center; /* Center align content */
+        margin-bottom: 20px; /* Add margin at the bottom */
+    }
+
+    /* Split Right */
+    .split.right {
+        padding: 20px; /* Add padding to create space */
+    }
+
+    /* Text inside White Side */
+    .white-side p {
+        font-size: 16px; /* Adjust font size */
+        color: black; /* Set text color */
+    }
+}
+ .image-container {
+        display: flex;
+        justify-content: space-around; /* Evenly space images */
+        align-items: center; /* Center align images vertically */
+        flex-wrap: wrap; /* Allow images to wrap to next line */
+    }
+
+    /* Image inside Image Container */
+    .image-container img {
+        width: calc(20% - 10px); /* Adjust width of images */
         height: auto;
-        margin-right: 10px;
+        margin: 5px; /* Add margin between images */
     }
-    }
-
-    /* Portfolio Text Side */
-    .portfolio .text-side {
-        padding: 60px;
-        margin-top: 90px;
+}
+ .half-split {
+        flex-direction: column; /* Display text and image sections in a column */
+        margin-bottom: 20px; /* Add margin between projects */
     }
 
-    /* Portfolio Image Side Images */
-    .portfolio .image-side img {
-        width: calc(25% - 10px);
-        height: auto;
-        margin-left: 10px;
+    /* Text-side and Image-side */
+    .text-side,
+    .image-side {
+        width: 100%; /* Set width to 100% for full width */
     }
 
-    /* Content, About Content, Image Container */
-    .content,
-    .about-content,
-    .image-container {
-        padding: 10px;
-    }
-
-    /* Button */
-    .button {
-        padding: 10px 20px;
-        font-size: 20px;
-    }
-
-    /* Black Background */
-    .black-background {
-        padding: 30px;
-        font-size: 24px;
+    /* Image-side */
+    .image-side {
+        margin-top: 20px; /* Add margin at the top */
     }
 
     /* Quote Box */
     .quote-box {
-        padding: 10px;
-        margin: 30px;
+        margin: 30px 0; /* Add margin at the top and bottom */
     }
 
-    /* LinkedIn Link, Email Link */
+    /* Linkedin Section */
+    .linkedin-section {
+        display: flex;
+        flex-direction: column; /* Display links in a column */
+        align-items: center; /* Center align links horizontally */
+    }
+
+    /* Linkedin Link and Email Link */
     .linkedin-link,
     .email-link {
-        padding: 10px 15px;
-        font-size: 20px;
-    }
-
-    /* HT Logo */
-    .ht-logo {
-        font-size: 35px;
-    }
-
-    /* Dark Goldenrod Background Images */
-    .darkgoldenrod-side img {
-        width: calc(25% - 10px);
-        height: auto;
-        margin-right: 10px;
-    }
-
-    /* Portfolio Image Side Images */
-    .portfolio .image-side img {
-        width: calc(25% - 10px);
-        height: auto;
-        margin-left: 10px;
-    }
-
-    /* Projects Text Side */
-    .Projects .text-side {
-        order: 1; /* Ensure text side is displayed first */
-    }
-
-    /* Projects Image Side */
-    .Projects .image-side {
-        order: 2; /* Ensure image side is displayed second */
+        margin: 10px 0; /* Add margin between links */
     }
 }
 
