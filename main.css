@@ -339,6 +339,37 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 600px) {
     /* Container */
+     .container {
+        flex-direction: column;
+    }
+
+    /* Spacing between image and text content */
+    .portfolio .text-side {
+        margin-bottom: 20px; /* Add spacing below text content */
+    }
+
+    /* Ensure proper alignment of projects section */
+    .Projects .half-split {
+        flex-direction: column; /* Display text and image sections in a column */
+    }
+
+    /* Adjust alignment of text content in projects section */
+    .Projects .text-side {
+        text-align: center; /* Center align text content */
+    }
+
+    /* Adjust alignment of image content in projects section */
+    .Projects .image-side {
+        display: flex;
+        justify-content: center; /* Center align image content */
+    }
+
+    /* Adjust image size in projects section */
+    .Projects .image-side img {
+        max-width: 100%; /* Set maximum width for images */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
     .container {
         flex-direction: column;
     }
