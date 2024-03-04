@@ -336,87 +336,80 @@ nav ul li a:hover {
     z-index: 999; /* Ensure the HT is on top of other elements */
 }
 /* iPhone 14 Portrait View */
-@media only screen and (max-width: 600px){
-    
-    /* Adjust styles for iPhone 14 portrait view */
-     .container {
+/* Existing CSS styles... */
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .container {
         flex-direction: column;
     }
-    
+
     .split {
         width: 100%;
     }
-    
+
     .split.left,
     .split.right {
         width: 100%;
     }
-    
+
     .icon-container {
         width: 48%;
     }
-    
+
     .lightskyblue-section,
     .white-section {
         height: auto;
     }
-    .header h1 {
-        font-size: 24px;
+
+    .Projects .image-side img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
     }
 
-    .header p {
-        font-size: 18px;
-    }
-
-   .about p {
-        font-size: 16px;
-    }
-
-    .button {
-        font-size: 16px;
-    }
-
-    .black-background {
-        background-color: black;
-        color: white; /* Set text color to white for better visibility */
-        padding: 50px 70px; /* Adjusted padding */
-        text-align: center; /* Add padding to create space between content and edges */
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 32px;
-    }
-
-    .linkedin-link,
-    .email-link {
-        font-size: 18px;
-    }
-
-    .ht-logo {
-        font-size: 24px;
-    }
-    .half-split {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     .content,
     .about-content,
     .image-container {
         padding: 10px;
     }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .black-background {
+        padding: 30px;
+        font-size: 24px;
+    }
+
     .quote-box {
         padding: 10px;
         margin: 30px;
     }
-    
 
-    .Projects .image-side img {
-        width: 90%; /* Set the width of the image to 90% */
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: 20px; /* Add margin to separate image from text */
+    .linkedin-link,
+    .email-link {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    .ht-logo {
+        font-size: 35px;
+    }
+
+    /* Additional styles to fix the layout issue */
+    .split.left,
+    .split.right {
+        margin-bottom: 20px; /* Add margin between split sections */
+    }
+
+    .Projects .half-split {
+        flex-direction: column; /* Display text and image sections in a column */
     }
 
     .Projects .text-side {
-        width: 90%; /* Set the width of the text side to 90% */
+        margin-top: 20px; /* Add space between text and image */
     }
-
 }
