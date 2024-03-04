@@ -337,6 +337,8 @@ nav ul li a:hover {
 }
 /* Mobile responsiveness */
 
+/* Mobile responsiveness */
+
 @media only screen and (max-width: 600px) {
     .container {
         flex-direction: column;
@@ -346,9 +348,10 @@ nav ul li a:hover {
         width: 48%;
     }
 
+    /* Remove height: auto; to prevent overlapping */
     .lightskyblue-section,
     .white-section {
-        
+        /* height: auto; */
     }
 
     .white-section .image-container img {
@@ -430,5 +433,23 @@ nav ul li a:hover {
     .portfolio .text-side {
         margin-top: 20px;
     }
-}
 
+    /* Display darkgoldenrod background images as 4 equally split images after your image */
+    .darkgoldenrod-side {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .darkgoldenrod-side img {
+        width: calc(25% - 10px); /* 4 images with 10px margin between */
+        height: auto;
+        margin-right: 10px; /* Add margin between images */
+    }
+
+    /* Ensure white background section */
+    .white-side {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px; /* Add margin to separate from darkgoldenrod images */
+    }
+}
