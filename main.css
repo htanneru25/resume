@@ -346,10 +346,7 @@ nav ul li a:hover {
     }
 
     /* Adjust split sections for smaller screens */
-    .split.left,
-    .split.right {
-        width: 100%;
-    }
+    
 
     /* Adjust icon container width for smaller screens */
     .icon-container {
@@ -407,10 +404,7 @@ nav ul li a:hover {
     }
 
     /* Additional styles to fix layout issue */
-    .split.left,
-    .split.right {
-        margin-bottom: 20px; /* Add margin between split sections */
-    }
+    
 
     .Projects .half-split {
         flex-direction: column; /* Display text and image sections in a column */
