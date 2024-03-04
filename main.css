@@ -337,8 +337,6 @@ nav ul li a:hover {
 }
 /* Mobile responsiveness */
 
-/* Mobile responsiveness */
-
 @media only screen and (max-width: 600px) {
     /* Container */
     .container {
@@ -438,7 +436,20 @@ nav ul li a:hover {
         height: auto;
         margin-left: 10px;
     }
+
+    /* Projects Text Side */
+    .Projects .text-side {
+        order: 1; /* Ensure text side is displayed first */
+    }
+
+    /* Projects Image Side */
+    .Projects .image-side {
+        order: 2; /* Ensure image side is displayed second */
+    }
 }
+
+
+
 
 
 
