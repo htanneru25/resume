@@ -340,66 +340,73 @@ nav ul li a:hover {
 
 /* Mobile responsiveness */
 @media only screen and (max-width: 600px) {
+    /* Adjust container layout for smaller screens */
     .container {
         flex-direction: column;
     }
 
-    .split {
-        width: 100%;
-    }
-
+    /* Adjust split sections for smaller screens */
     .split.left,
     .split.right {
         width: 100%;
     }
 
+    /* Adjust icon container width for smaller screens */
     .icon-container {
         width: 48%;
     }
 
+    /* Ensure sections have auto height on smaller screens */
     .lightskyblue-section,
     .white-section {
         height: auto;
     }
 
+    /* Adjust image size for smaller screens */
     .Projects .image-side img {
         width: 100%;
         height: auto;
         margin-left: 0;
     }
 
+    /* Adjust padding for various sections on smaller screens */
     .content,
     .about-content,
     .image-container {
         padding: 10px;
     }
 
+    /* Adjust button padding and font size for smaller screens */
     .button {
         padding: 10px 20px;
         font-size: 20px;
     }
 
+    /* Adjust padding and font size for black background section on smaller screens */
     .black-background {
         padding: 30px;
         font-size: 24px;
     }
 
+    /* Adjust padding and font size for quote box on smaller screens */
     .quote-box {
         padding: 10px;
         margin: 30px;
     }
 
+    /* Adjust padding and font size for LinkedIn and email links on smaller screens */
     .linkedin-link,
     .email-link {
         padding: 10px 15px;
         font-size: 20px;
     }
 
+    /* Adjust font size for HT logo on smaller screens */
     .ht-logo {
         font-size: 35px;
     }
 
-    /* Additional styles to fix the layout issue */
+    /* Additional styles to fix layout issue */
     .split.left,
     .split.right {
         margin-bottom: 20px; /* Add margin between split sections */
@@ -411,5 +418,15 @@ nav ul li a:hover {
 
     .Projects .text-side {
         margin-top: 20px; /* Add space between text and image */
+    }
+
+    /* Adjust height for light blue section */
+    .lightskyblue-section {
+        height: 200px; /* Adjust height as needed */
+    }
+
+    /* Adjust margin for about content */
+    .about-content {
+        margin-top: 20px; /* Add margin to separate from the light blue section */
     }
 }
