@@ -351,21 +351,22 @@ nav ul li a:hover {
     /* White Section */
     .white-section {
         background-color: white;
-        padding: 20px;
+        padding: 90px;
     }
 
     /* Light Sky Blue Section */
     .lightskyblue-section {
         background-color: lightskyblue;
         padding: 20px;
-        margin-top: 20px;
+        margin-top: 90px;
     }
 
     /* Dark Goldenrod Side */
     .darkgoldenrod-side {
         display: flex;
         justify-content: space-between;
-    }
+        padding: 70px;
+    
 
     /* Dark Goldenrod Side Images */
     .darkgoldenrod-side img {
@@ -373,10 +374,12 @@ nav ul li a:hover {
         height: auto;
         margin-right: 10px;
     }
+    }
 
     /* Portfolio Text Side */
     .portfolio .text-side {
-        margin-top: 20px;
+        padding: 60px;
+        margin-top: 90px;
     }
 
     /* Portfolio Image Side Images */
