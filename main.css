@@ -335,5 +335,84 @@ nav ul li a:hover {
     color: white; /* Set the color of the letters */
     z-index: 999; /* Ensure the HT is on top of other elements */
 }
+/* Mobile responsiveness */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .icon-container {
+        width: 48%;
+    }
+
+    .lightskyblue-section,
+    .white-section {
+        /* height: auto; */
+    }
+
+    .white-section {
+        background-color: white;
+        padding: 20px;
+    }
+
+    .lightskyblue-section {
+        background-color: lightskyblue;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .darkgoldenrod-side {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .darkgoldenrod-side img {
+        width: calc(25% - 10px);
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .portfolio .text-side {
+        margin-top: 20px;
+    }
+
+    .portfolio .image-side img {
+        width: calc(25% - 10px);
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .content,
+    .about-content,
+    .image-container {
+        padding: 10px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .black-background {
+        padding: 30px;
+        font-size: 24px;
+    }
+
+    .quote-box {
+        padding: 10px;
+        margin: 30px;
+    }
+
+    .linkedin-link,
+    .email-link {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    .ht-logo {
+        font-size: 35px;
+    }
+}
 
 
