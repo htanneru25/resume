@@ -354,12 +354,16 @@ nav ul li a:hover {
         /* height: auto; */
     }
 
-    .white-section .image-container img {
-        width: 100px;
-        height: 100px;
-        margin-right: 10px;
+    .white-section {
+        background-color: white; /* Separate white background for .white-section */
+        padding: 20px;
     }
 
+    .lightskyblue-section {
+        background-color: lightskyblue; /* Background color for .lightskyblue-section */
+        padding: 20px;
+        margin-top: 20px; /* Add margin to separate from .white-section */
+    }
     .content,
     .about-content,
     .image-container {
@@ -392,11 +396,12 @@ nav ul li a:hover {
     }
 
     /* Additional styles to fix the layout issue */
-    .portfolio .image-side img {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-    }
+   .portfolio .image-side img {
+    width: calc(25% - 10px); /* 4 images with 10px margin between */
+    height: auto;
+    margin-left: 10px; /* Add margin between images */
+}
+
 
     .content,
     .about-content,
@@ -404,10 +409,7 @@ nav ul li a:hover {
         padding: 10px;
     }
 
-    .button {
-        padding: 10px 20px;
-        font-size: 20px;
-    }
+   
 
     .black-background {
         padding: 30px;
