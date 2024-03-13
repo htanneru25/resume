@@ -346,6 +346,9 @@ nav ul li a:hover {
 /* Existing CSS code... */
 
 /* Add media queries for mobile view */
+/* Existing CSS code... */
+
+/* Add media queries for mobile view */
 @media only screen and (max-width: 768px) {
     .container {
         flex-direction: column; /* Change flex direction to stack elements vertically */
@@ -401,6 +404,14 @@ nav ul li a:hover {
     }
     .linkedin-section {
         margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+    
+    /* Ensure image comes first, followed by portfolio */
+    .image-container {
+        order: -1; /* Set image container to appear first */
+    }
+    .portfolio {
+        order: 1; /* Set portfolio to appear after image container */
     }
 }
 
