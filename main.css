@@ -357,14 +357,15 @@ nav ul li a:hover {
     .portfolio {
         flex-direction: column; /* Stack portfolio items vertically */
     }
-    .half-split {
-        display: block; /* Change to block display for full-width sections */
+    .split.left, .split.right {
+        width: 100%; /* Make split sections full width */
     }
     .image-side img,
     .text-side img {
-        max-width: 90%; /* Adjust image width for smaller screens */
+        max-width: 100%; /* Adjust image width for smaller screens */
         height: auto; /* Maintain aspect ratio */
         margin: 10px auto; /* Center-align images */
+        display: block; /* Ensure images take full width */
     }
     .text-side h2,
     .text-side p {
@@ -385,9 +386,10 @@ nav ul li a:hover {
         text-align: center; /* Center-align headings */
     }
     .white-section .image-container img {
-        width: 80px; /* Adjust image width for smaller screens */
-        height: 80px; /* Adjust image height for smaller screens */
-        margin-right: 5px; /* Adjust margin for smaller screens */
+        width: 100%; /* Adjust image width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px auto; /* Center-align images */
+        display: block; /* Ensure images take full width */
     }
     .linkedin-link,
     .email-link {
