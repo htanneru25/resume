@@ -47,6 +47,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: black;
 }
+
 .split {
     width: 50%;
     height: 80vh;
@@ -54,13 +55,13 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .portfolio {
     display: flex;
 }
 
 .split.left {
     width: 48.5%;
-    
 }
 
 .split.right {
@@ -70,12 +71,12 @@ nav ul li a:hover {
 .blue {
     color: blue;
 }
+
 .white-side p {
     color: black;
     font-size: 27.3px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 
 .left {
     background-color: darkgoldenrod;
@@ -103,14 +104,13 @@ nav ul li a:hover {
 
 .icon-row {
     display: flex;
-    justify-content: space-between; /* Evenly spread icons */
-    flex-wrap: wrap; /* Wrap icons to next line */
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 20px;
-    
 }
 
 .icon-container {
-    width: 23%; /* Adjust width to evenly spread icons */
+    width: 23%;
     text-align: center;
 }
 
@@ -118,7 +118,6 @@ nav ul li a:hover {
     max-width: 100%;
     height: auto;
 }
-
 
 .content {
     display: flex;
@@ -140,57 +139,60 @@ nav ul li a:hover {
     max-width: 90%;
     height: auto;
 }
+
 .sidebar-item-large {
-    font-size: 20px; /* Adjust font size as needed */
-    padding: 15px; /* Adjust padding as needed */
+    font-size: 20px;
+    padding: 15px;
     display: flex;
     align-items: center;
 }
 
 .circle {
-    width: 50px; /* Adjust circle size as needed */
-    height: 50px; /* Adjust circle size as needed */
-    border-radius: 50%; /* Create circular shape */
-    background-color: darkgoldenrod; /* Background color */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: darkgoldenrod;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .circle i {
-    color: white; /* Icon color */
+    color: white;
 }
+
 .icon-section {
     display: flex;
-    flex-wrap: wrap; /* Allow icons to wrap to the next line */
-    justify-content: space-between; /* Evenly distribute icons */
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .icon-container {
-    width: 48%; /* Adjust width to fit two icons side by side */
+    width: 48%;
     text-align: center;
-    margin-bottom: 20px; /* Add margin between icons */
+    margin-bottom: 20px;
 }
 
 .icon-container img {
-    width: 100px; /* Adjust icon size */
+    width: 100px;
     height: auto;
 }
+
 .icon-section {
-    padding: 20px; /* Add padding to the icon section */
+    padding: 20px;
 }
 
 .icon-row {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    margin-bottom: 20px; /* Increase margin between rows */
-   
+    margin-bottom: 20px;
 }
 
 .icon-container {
-    margin: 20 20px; /* Adjust the margin to increase or decrease space between icons */
+    margin: 20 20px;
 }
+
 .lightskyblue-section {
     background-color: rgb(49, 101, 197);
     height: 140px;
@@ -198,13 +200,13 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     font-size: 19px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .lightskyblue-section h2 {
-    color: white; /* Set the color of the heading to white */
+    color: white;
 }
+
 .white-section {
     background-color: white;
     height: 150px;
@@ -218,13 +220,13 @@ nav ul li a:hover {
 .white-section .image-container {
     display: flex;
     justify-content: center;
-    justify-content: space-around; /* Add space between the images */
+    justify-content: space-around;
 }
 
 .white-section .image-container img {
-    width: 100px; /* Set a fixed width for each image */
-    height: 100px; /* Set a fixed height for each image */
-    margin-right: 10px; /* Add some space between each image */
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
 }
 
 .Projects .half-split {
@@ -234,10 +236,10 @@ nav ul li a:hover {
 }
 
 .Projects .image-side img {
-    width: 590px; /* Set the width of the image */
-    height: 500px; /* Maintain aspect ratio */
-    margin-right: 5px; /* Add space to the right of the image */
-    margin-left: 20px; /* Add space to the left of the image */
+    width: 590px;
+    height: 500px;
+    margin-right: 5px;
+    margin-left: 20px;
     margin-top: 20px;
 }
 
@@ -248,7 +250,7 @@ nav ul li a:hover {
 }
 
 .button {
-    background-color: black; /* Green */
+    background-color: black;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -261,16 +263,17 @@ nav ul li a:hover {
     border-radius: 12px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .button a {
     color: white;
-    text-decoration: none; /* Remove underline from links within buttons */
+    text-decoration: none;
 }
 
 .black-background {
     background-color: black;
-    color: white; /* Set text color to white for better visibility */
-    padding: 50px 70px; /* Adjusted padding */
-    text-align: center; /* Add padding to create space between content and edges */
+    color: white;
+    padding: 50px 70px;
+    text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 32px;
 }
@@ -282,15 +285,16 @@ nav ul li a:hover {
     margin: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .linkedin-section {
     text-align: center;
-    margin-top: 15px; /* Adjust margin-top as needed */
+    margin-top: 15px;
 }
 
 .linkedin-link {
     color: white;
     text-decoration: none;
-    background-color: black; /* LinkedIn brand color */
+    background-color: black;
     padding: 10px 20px;
     border-radius: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -298,8 +302,9 @@ nav ul li a:hover {
 }
 
 .linkedin-link:hover {
-    background-color: black; /* Darker shade when hovered */
+    background-color: black;
 }
+
 .contact-section {
     display: flex;
     align-items: center;
@@ -307,32 +312,31 @@ nav ul li a:hover {
 
 .linkedin-link,
 .email-link {
-    margin-right: 20px; 
+    margin-right: 20px;
     color: blue;
     text-decoration: none;
-    background-color: black; /* LinkedIn brand color */
+    background-color: black;
     padding: 10px 20px;
     border-radius: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 32px;
-/* Adjust spacing between the links */
 }
 
 .email-link .email-logo {
-    display: none; /* Hide the email logo */
+    display: none;
 }
 
 .email-link:hover .email-logo {
-    display: inline; /* Show the email logo on hover */
+    display: inline;
 }
+
 .ht-logo {
     position: absolute;
     top: 10px;
     left: 10px;
     font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;/* Use Montserrat font for the letters HT */
-    font-size: 45px; /* Adjust font size as needed */
-    color: white; /* Set the color of the letters */
-    z-index: 999; /* Ensure the HT is on top of other elements */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    color: white;
+    z-index: 999;
 }
-/* iPhone 14 Portrait View */
