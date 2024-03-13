@@ -343,6 +343,9 @@ nav ul li a:hover {
 /* Existing CSS code... */
 
 /* Add media queries for mobile view */
+/* Existing CSS code... */
+
+/* Add media queries for mobile view */
 @media only screen and (max-width: 768px) {
     .container {
         flex-direction: column; /* Change flex direction to stack elements vertically */
