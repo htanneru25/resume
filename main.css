@@ -340,79 +340,58 @@ nav ul li a:hover {
     color: white;
     z-index: 999;
 }
-/* Existing CSS code... */
-
-/* Add media queries for mobile view */
-/* Existing CSS code... */
-
-/* Add media queries for mobile view */
-/* Existing CSS code... */
-
-/* Add media queries for mobile view */
+/* Mobile-specific CSS for index.html */
 @media only screen and (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Change flex direction to stack elements vertically */
-    }
-    .split {
-        width: 100%; /* Set width to 100% for full width */
-    }
-    .split.left, .split.right {
-        width: 100%; /* Set width to 100% for full width */
-    }
-    .icon-container {
-        width: 100%; /* Set width to 100% for full width */
-    }
-    .icon-row {
-        flex-direction: column; /* Stack icons vertically */
-    }
-    .black-background,
-    .quote-box {
-        padding: 20px; /* Adjust padding for smaller screens */
-        margin: 20px; /* Adjust margin for smaller screens */
-    }
-    .button {
-        font-size: 20px; /* Adjust font size for smaller screens */
-    }
-    .linkedin-link,
-    .email-link {
-        padding: 8px 16px; /* Adjust padding for smaller screens */
-        font-size: 20px; /* Adjust font size for smaller screens */
-    }
     .ht-logo {
         font-size: 30px; /* Adjust font size for smaller screens */
     }
-    
-    /* New mobile-specific requirements */
-    .black-side {
-        background-color: black; /* Ensure black background for text readability */
-        color: white; /* Set text color to white for readability */
+    .header h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
     }
-    .white-side {
-        background-color: white; /* Ensure white background for content readability */
-        color: black; /* Set text color to black for readability */
-        padding: 20px; /* Add padding for content readability */
+    .header p {
+        font-size: 24px; /* Adjust font size for smaller screens */
     }
-    .sidebar-item-large {
-        font-size: 16px; /* Adjust font size for smaller screens */
+    #about p {
+        font-size: 18px; /* Adjust font size for smaller screens */
     }
-    .circle {
-        width: 30px; /* Adjust circle size for smaller screens */
-        height: 30px; /* Adjust circle size for smaller screens */
+    .portfolio {
+        flex-direction: column; /* Stack portfolio items vertically */
     }
-    .circle i {
-        font-size: 16px; /* Adjust icon size for smaller screens */
+    .half-split {
+        display: block; /* Change to block display for full-width sections */
+    }
+    .image-side img,
+    .text-side img {
+        max-width: 90%; /* Adjust image width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px auto; /* Center-align images */
+    }
+    .text-side h2,
+    .text-side p {
+        text-align: center; /* Center-align text */
+    }
+    .button {
+        width: 100%; /* Make buttons full width */
+    }
+    .quote-box {
+        margin: 20px; /* Adjust margin for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
     }
     .linkedin-section {
         margin-top: 10px; /* Adjust margin for smaller screens */
     }
-    
-    /* Ensure image comes first, followed by portfolio */
-    .image-container {
-        order: -1; /* Set image container to appear first */
+    .lightskyblue-section h2,
+    .white-section h2 {
+        text-align: center; /* Center-align headings */
     }
-    .portfolio {
-        order: 1; /* Set portfolio to appear after image container */
+    .white-section .image-container img {
+        width: 80px; /* Adjust image width for smaller screens */
+        height: 80px; /* Adjust image height for smaller screens */
+        margin-right: 5px; /* Adjust margin for smaller screens */
+    }
+    .linkedin-link,
+    .email-link {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
     }
 }
-
-/* Additional CSS code... */
