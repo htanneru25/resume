@@ -340,3 +340,65 @@ nav ul li a:hover {
     color: white;
     z-index: 999;
 }
+/* Existing CSS code... */
+
+/* Add media queries for mobile view */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Change flex direction to stack elements vertically */
+    }
+    .split {
+        width: 100%; /* Set width to 100% for full width */
+    }
+    .split.left, .split.right {
+        width: 100%; /* Set width to 100% for full width */
+    }
+    .icon-container {
+        width: 100%; /* Set width to 100% for full width */
+    }
+    .icon-row {
+        flex-direction: column; /* Stack icons vertically */
+    }
+    .black-background,
+    .quote-box {
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin: 20px; /* Adjust margin for smaller screens */
+    }
+    .button {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    .linkedin-link,
+    .email-link {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    .ht-logo {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+    
+    /* New mobile-specific requirements */
+    .black-side {
+        background-color: black; /* Ensure black background for text readability */
+        color: white; /* Set text color to white for readability */
+    }
+    .white-side {
+        background-color: white; /* Ensure white background for content readability */
+        color: black; /* Set text color to black for readability */
+        padding: 20px; /* Add padding for content readability */
+    }
+    .sidebar-item-large {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .circle {
+        width: 30px; /* Adjust circle size for smaller screens */
+        height: 30px; /* Adjust circle size for smaller screens */
+    }
+    .circle i {
+        font-size: 16px; /* Adjust icon size for smaller screens */
+    }
+    .linkedin-section {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Additional CSS code... */
