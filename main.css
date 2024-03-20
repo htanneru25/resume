@@ -357,6 +357,19 @@ nav ul li a:hover {
   .text-side h2 {
     font-size: 1.5em;
   }
+    .text-side p {
+    font-size: 1em;
+  }
+     .header h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+    .header p {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+    #about p {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
      .portfolio {
         flex-direction: column; /* Stack portfolio items vertically */
     }
@@ -402,8 +415,6 @@ nav ul li a:hover {
 }
 
 
-  .text-side p {
-    font-size: 1em;
-  }
+  
 
  
