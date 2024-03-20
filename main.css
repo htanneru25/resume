@@ -362,9 +362,13 @@ nav ul li a:hover {
         width: 100%;
     }
 
-    .darkgoldenrod-side,
+    .darkgoldenrod-side{
+        padding:10px
+        width: 100%
+    }
     .white-side {
         padding: 10px;
+        width: 100%
     }
 
     .icon-container {
@@ -391,7 +395,7 @@ nav ul li a:hover {
 
     .quote-box {
         padding: 10px;
-        margin: 20px;
+        margin: 50px;
     }
 
     .linkedin-link,
