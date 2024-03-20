@@ -1,3 +1,7 @@
+To make your webpage responsive, you'll need to use media queries to adjust the layout and styles based on different screen sizes. Here's the breakdown of each line of code with modifications for responsiveness:
+
+```css
+/* Base styles */
 body {
     background-color: black;
     color: white;
@@ -14,14 +18,8 @@ html {
     height: 100%;
 }
 
-.black-side {
+.black-side, .white-side {
     flex: 1;
-    background-color: black;
-}
-
-.white-side {
-    flex: 1;
-    background-color: white;
 }
 
 nav ul {
@@ -49,7 +47,6 @@ nav ul li a:hover {
 }
 
 .split {
-    width: 50%;
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -60,12 +57,8 @@ nav ul li a:hover {
     display: flex;
 }
 
-.split.left {
-    width: 48.5%;
-}
-
-.split.right {
-    width: 51.5%;
+.split.left, .split.right {
+    width: 50%;
 }
 
 .blue {
@@ -86,13 +79,7 @@ nav ul li a:hover {
     background-color: white;
 }
 
-.darkgoldenrod-side {
-    padding: 20px;
-    color: white;
-    text-align: center;
-}
-
-.white-side {
+.darkgoldenrod-side, .white-side {
     padding: 20px;
 }
 
@@ -193,9 +180,7 @@ nav ul li a:hover {
     margin: 20 20px;
 }
 
-.lightskyblue-section {
-    background-color: rgb(49, 101, 197);
-    height: 140px;
+.lightskyblue-section, .white-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,22 +192,6 @@ nav ul li a:hover {
     color: white;
 }
 
-.white-section {
-    background-color: white;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 19px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.white-section .image-container {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
-
 .white-section .image-container img {
     width: 100px;
     height: 100px;
@@ -232,7 +201,6 @@ nav ul li a:hover {
 .Projects .half-split {
     display: flex;
     align-items: center;
-    background-color: white;
 }
 
 .Projects .image-side img {
@@ -340,4 +308,14 @@ nav ul li a:hover {
     color: white;
     z-index: 999;
 }
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .split {
+        height: auto;
+    }
 
