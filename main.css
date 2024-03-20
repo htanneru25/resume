@@ -361,102 +361,7 @@ nav ul li a:hover {
   }
 
     /* Adjustments for darkgoldenrod-side and white-side */
-    .darkgoldenrod-side,  {
-        flex: 100%;
-        padding: 20px;
-    }
-     .white-side,  .image
-    {
-         flex: 100%;
-        padding: 20px;
-        max-width: 90%;
-        height: auto;
-    }
-
-    /* Adjustments for icon-row */
-    .icon-row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Adjustments for icon-container */
-    .icon-container {
-        margin: 10px 0;
-    }
-
-    /* Adjustments for icon-label */
-    .icon-label {
-        margin-top: 5px;
-    }
-
-    /* Adjustments for white-side p */
-    .white-side p {
-        font-size: 14px;
-    }
-
-    /* Additional styles for image-container in white-section */
-    .white-section .image-container img {
-        max-width: 100px;
-        max-height: 100px;
-        width: auto;
-        height: auto;
-        margin: 10px;
-    }
-
-    /* Additional styles for Projects section */
-    .Projects {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
-    .Projects .half-split {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .Projects .half-split .image-side,
-    .Projects .half-split .text-side {
-        flex: 1;
-        padding: 15px;
-        text-align: center;
-    }
-
-    /* Additional styles for quote-box */
-    .quote-box {
-        background-color: rgb(176, 176, 245);
-        color: white;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-
-    /* Additional styles for linkedin-section */
-    .linkedin-section a {
-        text-decoration: none;
-        color: blue;
-        margin: 0 10px;
-    }
-
-    .linkedin-section a:hover {
-        color: dodgerblue;
-    }
-
-    /* Additional styles for email-link */
-    .email-link .email-logo {
-        display: none;
-    }
-
-    .email-link:hover .email-logo {
-        display: inline;
-    }
-}
-
-/* Common styles outside of media query */
-.lightskyblue-section,
+ .lightskyblue-section,
 .white-section,
 .black-background,
 .linkedin-section {
@@ -466,7 +371,69 @@ nav ul li a:hover {
 
 .lightskyblue-section h2,
 .white-section h2,
-.black-background h2 {
+.black-background h2,
+.black-background p,
+.linkedin-section a {
     font-size: 24px;
     color: #333;
+}
+
+/* Additional styles for image-container in white-section */
+.white-section .image-container img {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+/* Additional styles for Projects section */
+.Projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.Projects .half-split {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Projects .half-split .image-side,
+.Projects .half-split .text-side {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Additional styles for quote-box */
+.quote-box {
+    background-color: rgb(176, 176, 245);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Additional styles for linkedin-section */
+.linkedin-section a {
+    text-decoration: none;
+    color: blue;
+    margin: 0 10px;
+}
+
+.linkedin-section a:hover {
+    color: dodgerblue;
+}
+
+/* Additional styles for email-link */
+.email-link .email-logo {
+    display: none;
+}
+
+.email-link:hover .email-logo {
+    display: inline;
 }
