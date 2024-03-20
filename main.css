@@ -365,13 +365,10 @@ nav ul li a:hover {
         flex: 100%;
         padding: 20px;
     }
-     .white-side
+     .white-side,  .image
     {
          flex: 100%;
         padding: 20px;
-    }
-        
-    .image {
         max-width: 90%;
         height: auto;
     }
@@ -411,7 +408,7 @@ nav ul li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: 15px;
     }
 
     .Projects .half-split {
@@ -425,7 +422,7 @@ nav ul li a:hover {
     .Projects .half-split .image-side,
     .Projects .half-split .text-side {
         flex: 1;
-        padding: 20px;
+        padding: 15px;
         text-align: center;
     }
 
