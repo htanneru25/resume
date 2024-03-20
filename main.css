@@ -342,6 +342,26 @@ nav ul li a:hover {
 }
 /* Mobile-specific CSS for index.html */
 @media screen and (max-width: 600px) {
+    .header h1 {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+  .about-content p {
+    font-size: 1em;
+  }
+
+  .text-side h2 {
+    font-size: 1.5em;
+  }
+
+  .text-side p {
+    font-size: 1em;
+  }
+
   .container {
     flex-direction: column;
   }
