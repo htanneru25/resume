@@ -351,14 +351,11 @@ nav ul li a:hover {
     padding: 20px;
 }
 .icon-section {
-    /* Remove flex-direction: column; */
-    /* Remove align-items: center; */
+  
 }
 
 .icon-row {
-    display: block; /* Change display to block to stack items vertically */
-    /* Remove justify-content: space-between; */
-    /* Remove flex-wrap: wrap; */
+    display: block; 
     margin-bottom: 20px;
 }
 
@@ -378,4 +375,19 @@ nav ul li a:hover {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+}
+.about-content {
+  
+    width: 100%; 
+}
+
+.image-container {
+   
+    text-align: center;
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.image {
+    max-width: 90%;
+    height: auto;
 }
