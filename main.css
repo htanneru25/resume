@@ -319,3 +319,35 @@ nav ul li a:hover {
         height: auto;
     }
 
+    .icon-container {
+        width: 100%; /* Take full width on smaller screens */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    nav ul {
+        float: none; /* Remove float for better navigation display */
+        text-align: center; /* Center align navigation links */
+    }
+
+    nav ul li {
+        float: none; /* Remove float for better navigation display */
+        display: inline-block; /* Display navigation links horizontally */
+    }
+
+    .split.left, .split.right {
+        width: 100%; /* Make both sides take full width on smaller screens */
+    }
+
+    .Projects .image-side img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Ensure aspect ratio is maintained */
+        margin: 0; /* Reset margins */
+    }
+
+    .linkedin-link,
+    .email-link {
+        font-size: 24px; /* Adjust font size for better readability */
+        padding: 8px 16px; /* Adjust padding for better spacing */
+    }
+}
+
