@@ -340,100 +340,100 @@ nav ul li a:hover {
     color: white;
     z-index: 999;
 }
-@media screen and (max-width: 600px) {
-    .header h1 {
-    font-size: 2em;
-  }
-
-  .header p {
-    font-size: 1em;
-  }
-
-  .about-content p {
-    font-size: 1em;
-  }
-
-  .text-side h2 {
-    font-size: 1.5em;
-  }
-    .text-side p {
-    font-size: 1em;
-  }
-
-    /* Adjustments for darkgoldenrod-side and white-side */
- .lightskyblue-section,
-.white-section,
-.black-background,
-.linkedin-section {
-    text-align: center;
-    padding: 20px;
+/* General Styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-.lightskyblue-section h2,
-.white-section h2,
-.black-background h2,
-.black-background p,
-.linkedin-section a {
-    font-size: 24px;
-    color: #333;
+html {
+    height: 100%;
 }
 
-/* Additional styles for image-container in white-section */
-.white-section .image-container img {
-    max-width: 100px;
-    max-height: 100px;
-    width: auto;
-    height: auto;
-    margin: 10px;
-}
-
-/* Additional styles for Projects section */
-.Projects {
+.container {
     display: flex;
+    height: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: black;
+}
+
+/* Header Styles */
+.header h1 {
+    font-size: 2em;
+}
+
+.header p {
+    font-size: 1em;
+}
+
+/* About Section Styles */
+.about-content p {
+    font-size: 1em;
+}
+
+/* White Side Styles */
+.white-side p {
+    font-size: 1em;
+}
+
+/* Icon Section Styles */
+.icon-row {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
 }
 
-.Projects .half-split {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+.icon-container {
+    margin: 10px 0;
+    width: auto;
 }
 
-.Projects .half-split .image-side,
-.Projects .half-split .text-side {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
+.icon-container img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Additional styles for quote-box */
-.quote-box {
-    background-color: rgb(176, 176, 245);
-    color: white;
-    padding: 20px;
-    margin-bottom: 20px;
+/* Media Query for Tablets and Mobile Phones */
+@media screen and (max-width: 768px) {
+    .split {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .split.left, .split.right {
+        width: 100%;
+    }
+
+    .nav ul li {
+        float: none;
+        text-align: center;
+    }
+
+    .ht-logo {
+        display: none;
+    }
 }
 
-/* Additional styles for linkedin-section */
-.linkedin-section a {
-    text-decoration: none;
-    color: blue;
-    margin: 0 10px;
-}
-
-.linkedin-section a:hover {
-    color: dodgerblue;
-}
-
-/* Additional styles for email-link */
-.email-link .email-logo {
-    display: none;
-}
-
-.email-link:hover .email-logo {
-    display: inline;
-}
