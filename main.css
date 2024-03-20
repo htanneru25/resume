@@ -360,61 +360,30 @@ nav ul li a:hover {
     .text-side p {
     font-size: 1em;
   }
-     .header h1 {
-        font-size: 36px; /* Adjust font size for smaller screens */
-    }
-    .header p {
-        font-size: 24px; /* Adjust font size for smaller screens */
-    }
-    #about p {
-        font-size: 18px; /* Adjust font size for smaller screens */
-    }
+   .darkgoldenrod-side,
+  .white-side {
+    flex: 100%;
+  }
 
-     .portfolio {
-        flex-direction: column; /* Stack portfolio items vertically */
-    }
-    .split.left, .split.right {
-        width: 100%; /* Make split sections full width */
-    }
-    .image-side img,
-    .text-side img {
-        max-width: 100%; /* Adjust image width for smaller screens */
-        height: auto; /* Maintain aspect ratio */
-        margin: 10px auto; /* Center-align images */
-        display: block; /* Ensure images take full width */
-    }
-    .text-side h2,
-    .text-side p {
-        text-align: center; /* Center-align text */
-    }
-    .button {
-        width: 100%; /* Make buttons full width */
-    }
-    .quote-box {
-        margin: 20px; /* Adjust margin for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-    .linkedin-section {
-        margin-top: 10px; /* Adjust margin for smaller screens */
-    }
-    .lightskyblue-section h2,
-    .white-section h2 {
-        text-align: center; /* Center-align headings */
-    }
-    .white-section .image-container img {
-        width: 100%; /* Adjust image width for smaller screens */
-        height: auto; /* Maintain aspect ratio */
-        margin: 10px auto; /* Center-align images */
-        display: block; /* Ensure images take full width */
-    }
-    .linkedin-link,
-    .email-link {
-        padding: 8px 16px; /* Adjust padding for smaller screens */
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
+  .icon-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-container {
+    margin: 10px 0;
+  }
+
+  .icon-label {
+    margin-top: 5px;
+  }
+
+  .white-side p {
+    font-size: 14px;
+  }
+
+ .Projects .image-side,
+  .Projects .text-side {
+    flex: 1 1 100%;
+  }
 }
-
-
-  
-
- 
