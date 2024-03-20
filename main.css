@@ -340,4 +340,94 @@ nav ul li a:hover {
     color: white;
     z-index: 999;
 }
+@media screen and (max-width: 600px) {
+    .darkgoldenrod-side,
+    .white-side {
+        flex: 100%;
+    }
 
+    .icon-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-container {
+        margin: 10px 0;
+    }
+
+    .icon-label {
+        margin-top: 5px;
+    }
+
+    .white-side p {
+        font-size: 14px;
+    }
+}
+
+/* Additional styles for other sections */
+.lightskyblue-section, .white-section, .black-background, .linkedin-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.lightskyblue-section h2, .white-section h2, .lightskyblue-section p {
+    font-size: 24px;
+    color: #333;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 10px;
+}
+
+.Projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Projects .half-split {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Projects .half-split .image-side, .Projects .half-split .text-side {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.Projects .half-split .image-side img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.quote-box {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.linkedin-section a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+.linkedin-section a:hover {
+    color: dodgerblue;
+}
