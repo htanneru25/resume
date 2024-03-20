@@ -322,9 +322,9 @@ nav ul li a:hover {
 }
 .portfolio {
     /* Remove display: flex; */
-}
 
-.split.left, .split.right {
+
+
     width: 100%; /* Set width to 100% to occupy the full width */
 }
 
