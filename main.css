@@ -1,367 +1,150 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
 }
 
-html {
-    height: 100%;
-    margin: 0;
+/* Header styles */
+#main {
+  color: white;
+  text-align: center;
 }
 
-.container {
-    display: flex;
-    height: 100%;
+.header h1 {
+  font-size: 52px;
+  color: white;
 }
 
-.black-side {
-    flex: 1;
-    background-color: black;
+.header p {
+  font-size: 36px;
+  color: darkgoldenrod;
 }
 
-.white-side {
-    flex: 1;
-    background-color: white;
+#about p {
+  font-size: 28px;
+  color: white;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
-
-nav ul li {
-    float: right;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: black;
-}
-
-.split {
-    width: 50%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* Portfolio section styles */
 .portfolio {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-.split.left {
-    width: 48.5%;
+.darkgoldenrod-side,
+.white-side {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
 }
 
-.split.right {
-    width: 51.5%;
+.icon-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.blue {
-    color: blue;
+.icon-container {
+  margin: 0 10px;
+}
+
+.icon {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.icon-label {
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .white-side p {
-    color: black;
-    font-size: 27.3px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-.left {
-    background-color: darkgoldenrod;
-}
-
-.right {
-    background-color: white;
-}
-
-.darkgoldenrod-side {
-    padding: 20px;
-    color: white;
-    text-align: center;
-}
-
-.white-side {
-    padding: 20px;
-}
-
-.icon-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.icon-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.icon-container {
-    width: 23%;
-    text-align: center;
-}
-
-.icon-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-.content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-}
-
-.about-content {
-    flex: 1;
+/* Technological arsenal section styles */
+.lightskyblue-section,
+.white-section,
+.Projects {
+  padding: 20px;
 }
 
 .image-container {
-    flex: 1;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.image {
-    max-width: 90%;
-    height: auto;
+.image-container img {
+  margin: 10px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
-.sidebar-item-large {
-    font-size: 20px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
+/* Works section styles */
+.Projects {
+  display: flex;
+  justify-content: center;
 }
 
-.circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: darkgoldenrod;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.text-side,
+.image-side {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
 }
 
-.circle i {
-    color: white;
+.text-side h2 {
+  margin-bottom: 10px;
 }
 
-.icon-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.text-side p {
+  font-size: 16px;
 }
 
-.icon-container {
-    width: 48%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.icon-container img {
-    width: 100px;
-    height: auto;
-}
-
-.icon-section {
-    padding: 20px;
-}
-
-.icon-row {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.icon-container {
-    margin: 20 20px;
-}
-
-.lightskyblue-section {
-    background-color: rgb(49, 101, 197);
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 19px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.lightskyblue-section h2 {
-    color: white;
-}
-
-.white-section {
-    background-color: white;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 19px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.white-section .image-container {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
-
-.white-section .image-container img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-}
-
-.Projects .half-split {
-    display: flex;
-    align-items: center;
-    background-color: white;
-}
-
-.Projects .image-side img {
-    width: 590px;
-    height: 500px;
-    margin-right: 5px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-.Projects .text-side {
-    font-size: 26px;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.button {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.button a {
-    color: white;
-    text-decoration: none;
-}
-
+/* Black background section styles */
 .black-background {
-    background-color: black;
-    color: white;
-    padding: 50px 70px;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 32px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-.quote-box {
-    background-color: rgb(176, 176, 245);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.quote-box p {
+  font-style: italic;
 }
 
+/* LinkedIn section styles */
 .linkedin-section {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.linkedin-link {
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 32px;
-}
-
-.linkedin-link:hover {
-    background-color: black;
-}
-
-.contact-section {
-    display: flex;
-    align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .linkedin-link,
 .email-link {
-    margin-right: 20px;
-    color: blue;
-    text-decoration: none;
-    background-color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 32px;
+  color: blue;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-.email-link .email-logo {
-    display: none;
-}
-
-.email-link:hover .email-logo {
-    display: inline;
-}
-
-.ht-logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 45px;
-    color: white;
-    z-index: 999;
-}
-/* Mobile-specific CSS for index.html */
+/* Media query for mobile view */
 @media screen and (max-width: 600px) {
-    .header h1 {
-    font-size: 2em;
-  }
-
-  .header p {
-    font-size: 1em;
-  }
-
-  .about-content p {
-    font-size: 1em;
-  }
-
-  .text-side h2 {
-    font-size: 1.5em;
-  }
-    .text-side p {
-    font-size: 1em;
-  }
-   .darkgoldenrod-side,
-  .white-side {
+  .darkgoldenrod-side,
+  .white-side,
+  .text-side,
+  .image-side {
     flex: 100%;
   }
 
@@ -378,12 +161,8 @@ nav ul li a:hover {
     margin-top: 5px;
   }
 
-  .white-side p {
+  .white-side p,
+  .text-side p {
     font-size: 14px;
-  }
-
- .Projects .image-side,
-  .Projects .text-side {
-    flex: 1 1 100%;
   }
 }
