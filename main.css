@@ -341,24 +341,6 @@ nav ul li a:hover {
     z-index: 999;
 }
 @media screen and (max-width: 600px) {
-     .header h1 {
-    font-size: 2em;
-  }
-
-  .header p {
-    font-size: 1em;
-  }
-
-  .about-content p {
-    font-size: 1em;
-  }
-
-  .text-side h2 {
-    font-size: 1.5em;
-  }
-    .text-side p {
-    font-size: 1em;
-  }
 
     .darkgoldenrod-side,
     .white-side {
@@ -404,6 +386,8 @@ nav ul li a:hover {
 .image-container img {
     max-width: 100px;
     max-height: 100px;
+    width: auto; /* Ensures the image maintains its aspect ratio */
+    height: auto;
     margin: 10px;
 }
 
@@ -413,6 +397,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    flex-direction: column; /* Change to column */
 }
 
 .Projects .image-side,
@@ -429,7 +414,7 @@ nav ul li a:hover {
 
 
 .quote-box {
-    background-color: #333;
+    background-color: rgb(176, 176, 245);
     color: white;
     padding: 20px;
     margin-bottom: 20px;
@@ -443,4 +428,12 @@ nav ul li a:hover {
 
 .linkedin-section a:hover {
     color: dodgerblue;
+}
+.email-link .email-logo {
+    display: none; /* Hide the email logo */
+}
+
+.email-link:hover .email-logo {
+    display: inline; /* Show the email logo on hover */
+}
 }
