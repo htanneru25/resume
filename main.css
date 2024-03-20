@@ -341,6 +341,25 @@ nav ul li a:hover {
     z-index: 999;
 }
 @media screen and (max-width: 600px) {
+     .header h1 {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+  .about-content p {
+    font-size: 1em;
+  }
+
+  .text-side h2 {
+    font-size: 1.5em;
+  }
+    .text-side p {
+    font-size: 1em;
+  }
+
     .darkgoldenrod-side,
     .white-side {
         flex: 100%;
@@ -396,24 +415,18 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.Projects .half-split {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.Projects .half-split .image-side, .Projects .half-split .text-side {
+.Projects .image-side,
+.Projects .text-side {
     flex: 1;
     padding: 20px;
     text-align: center;
 }
 
-.Projects .half-split .image-side img {
+.Projects .image-side img {
     max-width: 100%;
     max-height: 100%;
 }
+
 
 .quote-box {
     background-color: #333;
@@ -424,7 +437,7 @@ nav ul li a:hover {
 
 .linkedin-section a {
     text-decoration: none;
-    color: #333;
+    color: blue;
     margin: 0 10px;
 }
 
