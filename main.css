@@ -345,6 +345,11 @@ nav ul li a:hover {
     .darkgoldenrod-side,
     .white-side {
         flex: 100%;
+        padding: 20px;
+    .image {
+    max-width: 90%;
+    height: auto;
+}
     }
 
     .icon-row {
