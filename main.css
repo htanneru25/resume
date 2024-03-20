@@ -371,7 +371,24 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.lightskyblue-section h2, .white-section h2, .lightskyblue-section p {
+.lightskyblue-section h2, .lightskyblue-section p {
+    font-size: 24px;
+    color: #333;
+}
+
+.white-section h2, .white-section p {
+    font-size: 24px;
+    color: #333;
+    .image-container img {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto; /* Ensures the image maintains its aspect ratio */
+    height: auto;
+    margin: 10px;
+
+}
+
+.black-background h2, .black-background p {
     font-size: 24px;
     color: #333;
 }
@@ -393,23 +410,24 @@ nav ul li a:hover {
 
 .Projects {
     display: flex;
+    flex-direction: column; /* Display items vertically */
+    align-items: center;
+    padding: 20px;
+}
+
+.Projects .half-split {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    flex-direction: column; /* Change to column */
+    margin-bottom: 20px;
 }
 
-.Projects .image-side,
-.Projects .text-side {
+.Projects .half-split .image-side,
+.Projects .half-split .text-side {
     flex: 1;
     padding: 20px;
     text-align: center;
-}
-
-.Projects .image-side img {
-    max-width: 100%;
-    max-height: 100%;
 }
 
 
