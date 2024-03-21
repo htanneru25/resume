@@ -361,73 +361,42 @@ nav ul li a:hover {
     .image {
         max-width: 80%;
     }
-/* Styles for white-section */
-.white-section {
-    background-color: white;
-    height: 150px;
-    display: flex;
-    flex-direction: column; /* Display children elements vertically */
-    justify-content: center;
-    align-items: center;
-    font-size: 19px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+@media only screen and (max-width: 600px) {
+    .portfolio {
+        height: 100vh; /* Make the portfolio section occupy the entire vertical height of the screen */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.white-section .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px; /* Add margin to separate from text */
-}
+    .left,
+    .right {
+        width: 100%;
+    }
 
-.white-section .image-container img {
-    width: 100px; /* Set a fixed width for each image */
-    height: 100px; /* Set a fixed height for each image */
-    margin-right: 10px; /* Add some space between each image */
-}
+    .darkgoldenrod-side,
+    .white-side {
+        padding: 10px;
+    }
 
-/* Styles for Projects section */
-.Projects .half-split {
-    display: flex;
-    flex-direction: column; /* Display children elements vertically */
-    align-items: center;
-    background-color: white;
-    padding: 20px; /* Add padding for spacing */
-}
+    .icon-container {
+        width: 100%;
+    }
 
-.Projects .image-side img {
-    width: 590px; /* Set the width of the image */
-    height: 500px; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Add margin at the bottom to separate from text */
-}
+    .image {
+        max-width: 80%;
+    }
 
-.Projects .text-side {
-    font-size: 26px;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center; /* Center align text */
-    max-width: 80%; /* Limit text width for better readability */
-}
+    .sidebar-item-large {
+        font-size: 16px;
+        padding: 10px;
+    }
 
-.button {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.button a {
-    color: white;
-    text-decoration: none;
-}
+    .circle {
+        width: 30px;
+        height: 30px;
+    }
 
     .button {
         font-size: 18px;
@@ -435,7 +404,7 @@ nav ul li a:hover {
 
     .quote-box {
         padding: 10px;
-        margin: 50px;
+        margin: 20px;
     }
 
     .linkedin-link,
@@ -444,4 +413,3 @@ nav ul li a:hover {
         padding: 8px 16px;
     }
 }
-
