@@ -338,78 +338,71 @@ nav ul li a:hover {
 /* iPhone 14 Portrait View */
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 14px;
+        font-size: 14px; /* Adjust the base font size for better readability on smaller screens */
     }
 
     .container {
-        flex-direction: column;
+        flex-direction: column; /* Stack container elements vertically */
     }
 
     nav ul li {
-        float: none;
-        text-align: center;
+        float: none; /* Remove floating for navigation items */
+        text-align: center; /* Center align navigation items */
     }
 
     .split {
-        height: auto;
+        height: auto; /* Let the split section adjust its height based on content */
     }
 
-    .icon-container {
-        width: 100%;
-    }
-
-    .image {
-        max-width: 80%;
-    }
     .portfolio {
-        height: 50vh; /* Make the portfolio section occupy the entire vertical height of the screen */
-        width: 100%;
+        height: auto; /* Allow the portfolio section to adjust its height based on content */
+        width: 100%; /* Ensure the portfolio section takes up the full width */
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column; /* Stack portfolio elements vertically */
+        justify-content: center; /* Center align content vertically */
+        align-items: center; /* Center align content horizontally */
     }
 
     .left,
     .right {
-        width: 100%;
+        width: 100%; /* Make sure left and right sections take up the full width */
     }
 
     .darkgoldenrod-side,
     .white-side {
-        padding: 10px;
+        padding: 10px; /* Add padding to darkgoldenrod-side and white-side for spacing */
     }
 
     .icon-container {
-        width: 100%;
+        width: 100%; /* Set icon container to full width */
     }
 
     .image {
-        max-width: 80%;
+        max-width: 80%; /* Limit image width for responsiveness */
     }
 
     .sidebar-item-large {
-        font-size: 16px;
-        padding: 10px;
+        font-size: 16px; /* Adjust font size for sidebar items */
+        padding: 10px; /* Add padding to sidebar items */
     }
 
     .circle {
-        width: 30px;
-        height: 30px;
+        width: 30px; /* Set circle width */
+        height: 30px; /* Set circle height */
     }
 
     .button {
-        font-size: 18px;
+        font-size: 18px; /* Adjust button font size */
     }
 
     .quote-box {
-        padding: 10px;
-        margin: 20px;
+        padding: 10px; /* Add padding to the quote box */
+        margin: 20px; /* Add margin around the quote box */
     }
 
     .linkedin-link,
     .email-link {
-        font-size: 18px;
-        padding: 8px 16px;
+        font-size: 18px; /* Adjust font size for LinkedIn and email links */
+        padding: 8px 16px; /* Add padding to LinkedIn and email links */
     }
 }
