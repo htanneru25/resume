@@ -361,9 +361,9 @@ nav ul li a:hover {
     .image {
         max-width: 80%;
     }
-@media only screen and (max-width: 600px) {
     .portfolio {
-        height: 100vh; /* Make the portfolio section occupy the entire vertical height of the screen */
+        height: 50vh; /* Make the portfolio section occupy the entire vertical height of the screen */
+        width: 100%
         display: flex;
         flex-direction: column;
         justify-content: center;
