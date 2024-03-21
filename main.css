@@ -60,16 +60,21 @@ menu-icon {
     top: 0;
     left: -250px; /* Hide the sidebar off-screen by default */
     height: 100%;
-    width: 250px;
+    width: 60px; /* Set a small width for the sidebar */
     background-color: white; /* Change background color to white */
     overflow-x: hidden;
-    padding-top: 60px;
+    padding-top: 60px; /* Adjust as needed */
     transition: left 0.5s; /* Use left property for animation */
 }
 
 .sidebar.open {
     left: 0; /* Move the sidebar to the visible position */
 }
+
+.sidebar a {
+    color: white; /* Set text color to white */
+}
+
 
 .sidebar ul {
     list-style-type: none;
