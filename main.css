@@ -11,6 +11,7 @@ body {
 menu-icon {
     display: block; /* Display the menu icon by default */
     cursor: pointer;
+    color: white;
 }
 
 .bar {
@@ -47,6 +48,7 @@ menu-icon {
 .menu-icon {
     
     cursor: pointer;
+    color: white;
      
 }
 
