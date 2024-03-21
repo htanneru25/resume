@@ -355,13 +355,15 @@ nav ul li a:hover {
     }
 
     .portfolio {
-        height: auto; /* Allow the portfolio section to adjust its height based on content */
-        width: 100%; /* Ensure the portfolio section takes up the full width */
-        display: flex;
-        flex-direction: column; /* Stack portfolio elements vertically */
-        justify-content: center; /* Center align content vertically */
-        align-items: center; /* Center align content horizontally */
-    }
+    height: auto; /* Allow the portfolio section to adjust its height based on content */
+    width: 100%; /* Ensure the portfolio section takes up the full width */
+    display: flex;
+    flex-direction: column; /* Stack portfolio elements vertically */
+    justify-content: center; /* Center align content vertically */
+    align-items: center; /* Center align content horizontally */
+    overflow: auto; /* Enable scrolling if content overflows */
+}
+
 
     .left,
     .right {
