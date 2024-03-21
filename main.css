@@ -363,17 +363,26 @@ nav ul li a:hover {
     align-items: center; /* Center align content horizontally */
     overflow: auto; /* Enable scrolling if content overflows */
 }
+.darkgoldenrod-side,
+.white-side {
+    padding: 100px; /* Add padding to darkgoldenrod-side and white-side for spacing */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+    justify-content: center; /* Center align items horizontally */
+}
 
+.darkgoldenrod-side img,
+.white-side img {
+    width: 45%; /* Adjust image width */
+    margin: 5px; /* Add some margin between images */
+}
 
-    .left,
-    .right {
-        width: 100%; /* Make sure left and right sections take up the full width */
-    }
+.white-side {
+    background-color: white;
+    width: 100%/* Set background color for white-side */
+}
 
-    .darkgoldenrod-side,
-    .white-side {
-        padding: 100px; /* Add padding to darkgoldenrod-side and white-side for spacing */
-    }
 
     .icon-container {
         width: 100%; /* Set icon container to full width */
