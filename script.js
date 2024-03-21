@@ -1,5 +1,6 @@
 function toggleMenu() {
-    var sidebar = document.querySelector('.sidebar');
+     var sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('open'); 
     var content = document.querySelector('.content');
 
     if (sidebar.style.width === '250px') {
