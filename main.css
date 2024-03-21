@@ -23,7 +23,7 @@ menu-icon {
     display: flex;
     justify-content: flex-end; /* Align the desktop nav to the right */
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: black;
 }
 
 .desktop-nav ul {
@@ -38,7 +38,7 @@ menu-icon {
 }
 
 .desktop-nav a {
-    text-decoration: none;
+    text-decoration: white;
     color: black;
 }
 
