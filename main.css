@@ -366,7 +366,7 @@ nav ul li a:hover {
 
     .darkgoldenrod-side,
     .white-side {
-        padding: 10px; /* Add padding to darkgoldenrod-side and white-side for spacing */
+        padding: 10px 50px; /* Add padding to darkgoldenrod-side and white-side for spacing */
         width: auto;
         height: auto;
         display: flex;
