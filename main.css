@@ -1,8 +1,56 @@
 body {
-    background-color: black;
+     margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
 }
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.5s;
+}
+   
 
 html {
     height: 100%;
@@ -343,6 +391,20 @@ nav ul li a:hover {
 
     .container {
         flex-direction: column; /* Stack container elements vertically */
+    }
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+    }
+
+    .sidebar {
+        width: 0;
+    }
+
+    .content {
+        margin-left: 0;
     }
 
     nav ul li {
