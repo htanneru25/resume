@@ -353,66 +353,209 @@ nav ul li a:hover {
     .split {
         height: auto; /* Let the split section adjust its height based on content */
     }
-
     .portfolio {
-        height: auto; /* Allow the portfolio section to adjust its height based on content */
-        width: 100%; /* Ensure the portfolio section takes up the full width */
-        display: flex;
-        flex-direction: column; /* Stack portfolio elements vertically */
-        justify-content: center; /* Center align content vertically */
-        align-items: center; /* Center align content horizontally */
+       display: block; /* Change display to block to stack elements vertically */
     }
 
-    .center {
-        width: 100%; /* Make sure left and right sections take up the full width */
+    .split.left,
+    .split.right {
+        width: 100%; /* Set width to 100% to make each split take up full width */
     }
-
     .darkgoldenrod-side {
-        display: flex; /* Use flexbox for darkgoldenrod side */
-        flex-wrap: wrap; /* Allow images to wrap to the next line */
-        justify-content: center; /* Center images horizontally */
-    }
-
-    .darkgoldenrod-side img {
-        max-width: 45%; /* Set max width for images to fit two side by side */
-        margin: 5px; /* Add margin between images */
+        padding: 2%; /* 2% padding relative to the width of the screen */
+        color: white;
+        text-align: center;
     }
 
     .white-side {
-        padding: 10px;
-        max-width: 100%/* Add padding to white side for spacing */
+        padding: 2%; /* 2% padding relative to the width of the screen */
+    }
+     .icon-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-row {
+        display: flex;
+        flex-wrap: wrap; /* Wrap icons to the next line */
+        justify-content: center; /* Center icons horizontally */
+        margin-bottom: 20px;
     }
 
     .icon-container {
-        width: 100%; /* Set icon container to full width */
+        width: 45%; /* Adjust width to evenly spread icons */
+        text-align: center;
+    }
+    .content {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items horizontally */
+        padding: 20px;
+    }
+
+    .about-content, .image-container {
+        flex: none; /* Disable flex grow for these items */
+        width: 100%; /* Set width to fill the screen */
+        text-align: center; /* Center align text and content */
     }
 
     .image {
-        max-width: 80%; /* Limit image width for responsiveness */
+        max-width: 100%; /* Ensure image fills the width of its container */
+        height: auto; /* Maintain aspect ratio */
     }
-
     .sidebar-item-large {
-        font-size: 16px; /* Adjust font size for sidebar items */
-        padding: 10px; /* Add padding to sidebar items */
+        font-size: 16px; /* Adjust font size for mobile view */
+        padding: 10px; /* Adjust padding for mobile view */
+        display: flex;
+        align-items: center;
+    }
+     .icon-section {
+        display: flex;
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center align icons horizontally */
     }
 
-    .circle {
-        width: 30px; /* Set circle width */
-        height: 30px; /* Set circle height */
+    .icon-container {
+        width: 100%; /* Adjust width to fill the width of the container */
+        text-align: center;
+        margin-bottom: 20px; /* Add margin between icons */
     }
 
+    .icon-container img {
+        width: 80px; /* Adjust icon size for mobile view */
+        height: auto;
+    }
+    .icon-row {
+        display: flex;
+        flex-wrap: wrap; /* Allow icons to wrap to the next line */
+        justify-content: center; /* Center align icons horizontally */
+        margin-top: 20px; /* Reduce top margin for spacing */
+        margin-bottom: 10px; /* Reduce bottom margin for spacing */
+    }
+
+    .icon-container {
+        margin: 10px; /* Adjust margin to increase or decrease space between icons */
+    }
+
+    .lightskyblue-section {
+        background-color: rgb(49, 101, 197);
+        height: auto; /* Let the height adjust based on content */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px; /* Adjust font size for mobile view */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .lightskyblue-section h2 {
+        color: white; /* Set the color of the heading to white */
+        margin: 0; /* Remove default margin to better fit the container */
+    }
+    .white-section {
+        background-color: white;
+        height: auto; /* Let the height adjust based on content */
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center;
+        align-items: center;
+        font-size: 16px; /* Adjust font size for mobile view */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .white-section .image-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow images to wrap to the next line */
+        justify-content: center;
+        margin-top: 10px; /* Add margin between image container and other content */
+    }
+
+    .white-section .image-container img {
+        width: 80px; /* Adjust image width for mobile view */
+        height: 80px; /* Adjust image height for mobile view */
+        margin: 5px; /* Adjust margin for spacing between images */
+    }
+    .Projects .half-split {
+        display: block; /* Change display to block to make it stack vertically */
+        background-color: white;
+        padding: 20px; /* Add padding for spacing */
+    }
+
+    .Projects .image-side img {
+        width: 100%; /* Set image width to fill the container */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* Remove margin to fit the image within the container */
+    }
+
+    .Projects .text-side {
+        font-size: 16px; /* Adjust font size for mobile view */
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 20px; /* Add margin for spacing */
+    }
     .button {
-        font-size: 18px; /* Adjust button font size */
+        background-color: black; /* Green */
+        border: none;
+        color: white;
+        padding: 12px 24px; /* Decrease padding for smaller screens */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px; /* Decrease font size for smaller screens */
+        margin: 8px 4px; /* Increase margin for better spacing */
+        cursor: pointer;
+        border-radius: 8px; /* Decrease border radius for smaller buttons */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .button a {
+        color: white;
+        text-decoration: none; /* Remove underline from links within buttons */
+    }
+    .black-background {
+        background-color: black;
+        color: white; /* Set text color to white for better visibility */
+        padding: 30px; /* Adjusted padding for mobile view */
+        text-align: center; /* Center align content */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px; /* Decreased font size for mobile view */
+        margin: 20px; /* Adjusted margin for better spacing */
     }
 
     .quote-box {
-        padding: 10px; /* Add padding to the quote box */
-        margin: 20px; /* Add margin around the quote box */
+        background-color: rgb(176, 176, 245);
+        border-radius: 10px;
+        padding: 15px; /* Adjusted padding for mobile view */
+        margin: 20px; /* Adjusted margin for better spacing */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+     .linkedin-section {
+        text-align: center;
+        margin-top: 10px; /* Adjusted margin-top for mobile view */
     }
 
     .linkedin-link,
     .email-link {
-        font-size: 18px; /* Adjust font size for LinkedIn and email links */
-        padding: 8px 16px; /* Add padding to LinkedIn and email links */
+        margin-right: 10px; /* Adjusted margin between the links for mobile view */
+        padding: 8px 16px; /* Adjusted padding for mobile view */
+        font-size: 16px; /* Decreased font size for mobile view */
     }
-}
+
+    .contact-section {
+        display: flex;
+        flex-wrap: wrap; /* Allow contact links to wrap on smaller screens */
+        justify-content: center; /* Center align contact links horizontally */
+        margin-top: 10px; /* Adjusted margin-top for mobile view */
+    }
+
+    .ht-logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-style: italic;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px; /* Decreased font size for mobile view */
+        color: white;
+        z-index: 999;
+    }
