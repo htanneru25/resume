@@ -7,8 +7,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.menu-icon {
-    display: none;
+menu-icon {
+    display: block; /* Display the menu icon by default */
     cursor: pointer;
 }
 
@@ -22,13 +22,17 @@ body {
 .sidebar {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -250px; /* Hide the sidebar off-screen by default */
     height: 100%;
     width: 250px;
     background-color: #f4f4f4;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: 0.5s;
+    transition: left 0.5s; /* Use left property for animation */
+}
+
+.sidebar.open {
+    left: 0; /* Move the sidebar to the visible position */
 }
 
 .sidebar ul {
@@ -44,7 +48,6 @@ body {
     text-decoration: none;
     color: black;
 }
-
 .content {
     margin-left: 250px;
     padding: 20px;
@@ -392,15 +395,12 @@ nav ul li a:hover {
     .container {
         flex-direction: column; /* Stack container elements vertically */
     }
-    .menu-icon {
-        display: block;
-        position: fixed;
-        top: 20px;
-        left: 20px;
+   .menu-icon {
+        display: none;
     }
 
     .sidebar {
-        width: 0;
+        left: 0; /* Show the sidebar by default on larger screens */
     }
 
     .content {
