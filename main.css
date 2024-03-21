@@ -355,37 +355,35 @@ nav ul li a:hover {
     }
 
     .portfolio {
-    height: auto; /* Allow the portfolio section to adjust its height based on content */
-    width: 100%; /* Ensure the portfolio section takes up the full width */
-    display: flex;
-    flex-direction: column; /* Stack portfolio elements vertically */
-    justify-content: center; /* Center align content vertically */
-    align-items: center; /* Center align content horizontally */
-    overflow: auto; /* Enable scrolling if content overflows */
-}
-.darkgoldenrod-side,
-.white-side {
-    padding: 10px; /* Add padding to darkgoldenrod-side and white-side for spacing */
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
-    justify-content: center; /* Center align items horizontally */
-}
+        height: auto; /* Allow the portfolio section to adjust its height based on content */
+        width: 100%; /* Ensure the portfolio section takes up the full width */
+        display: flex;
+        flex-direction: column; /* Stack portfolio elements vertically */
+        justify-content: center; /* Center align content vertically */
+        align-items: center; /* Center align content horizontally */
+        overflow: auto; /* Enable scrolling if content overflows */
+    }
 
-.darkgoldenrod-side img,
- {
-    width: 105%; /* Adjust image width */
-    margin: 5px; 
-    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
-    justify-content: center/* Add some margin between images */
-}
+    .darkgoldenrod-side,
+    .white-side {
+        padding: 10px; /* Add padding to darkgoldenrod-side and white-side for spacing */
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+        justify-content: center; /* Center align items horizontally */
+    }
 
-.white-side {
-    background-color: white;
-    width: 100%
-   justify-content: center
-}
+    .darkgoldenrod-side img,
+    .white-side img {
+        width: 45%; /* Adjust image width */
+        margin: 5px; /* Add some margin between images */
+    }
 
+    .white-side {
+        background-color: white; /* Set background color for white-side */
+        width: 100%; /* Ensure white-side takes up full width */
+        justify-content: center; /* Center align content horizontally */
+    }
 
     .icon-container {
         width: 100%; /* Set icon container to full width */
