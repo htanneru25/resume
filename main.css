@@ -367,7 +367,8 @@ nav ul li a:hover {
     .darkgoldenrod-side,
     .white-side {
         padding: 10px; /* Add padding to darkgoldenrod-side and white-side for spacing */
-        width: 100%;
+        width: auto;
+        height: auto;
         display: flex;
         flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
         justify-content: center; /* Center align items horizontally */
@@ -375,8 +376,8 @@ nav ul li a:hover {
 
     .darkgoldenrod-side img,
     .white-side img {
-        width: 45%; /* Adjust image width */
-        margin: 5px; /* Add some margin between images */
+        width: 100%; /* Adjust image width */
+        margin: 15px; /* Add some margin between images */
     }
 
     .white-side {
