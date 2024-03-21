@@ -21,7 +21,7 @@ menu-icon {
 
 .header {
     display: flex;
-    justify-content: flex-end; /* Align the desktop nav to the right */
+    justify-content: center; /* Align the desktop nav to the right */
     padding: 10px;
     background-color: black;
 }
