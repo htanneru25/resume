@@ -19,13 +19,49 @@ menu-icon {
     margin: 4px 0;
 }
 
+.header {
+    display: flex;
+    justify-content: flex-end; /* Align the desktop nav to the right */
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.desktop-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.desktop-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Sidebar styles */
+.menu-icon {
+    display: none; /* Hide menu icon by default */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
     left: -250px; /* Hide the sidebar off-screen by default */
     height: 100%;
     width: 250px;
-    background-color: #f4f4f4;
+    background-color: white; /* Change background color to white */
     overflow-x: hidden;
     padding-top: 60px;
     transition: left 0.5s; /* Use left property for animation */
@@ -391,7 +427,21 @@ nav ul li a:hover {
     body {
         font-size: 14px; /* Adjust the base font size for better readability on smaller screens */
     }
+     .menu-icon {
+        display: block; /* Display the menu icon for mobile view */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 999; /* Ensure menu icon is on top of other elements */
+    }
 
+    .header {
+        display: none; /* Hide the header for mobile view */
+    }
+
+    .content {
+        margin-left: 0; /* Ensure content is not shifted for mobile view */
+    }
     .container {
         flex-direction: column; /* Stack container elements vertically */
     }
