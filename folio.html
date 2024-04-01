@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harika's Portfolio</title>
     <link rel="stylesheet" href="main.css">
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -43,33 +42,19 @@
   </style>
 </head>
 <body>
-     <div class="ht-logo">HT</div>
-     <header class="header">
-        <!-- Menu items for desktop view -->
-    
-    <div class="menu-icon" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    
-    <div class="sidebar">
+  <div class="ht-logo">HT</div>
     <nav>
         <ul>
-            <li><a href="https://drive.google.com/file/d/17q6f06A3BBJEp6nL-3YaBBpk8D4W0jcL/view?usp=sharing" target="_blank">Resume</a></li>
+            <div class="topnav" id="myTopnav">
+            <li><a href="https://drive.google.com/file/d/1J9NcXtYzQtJ_YYW8OyO31bup1_vdgJBZ/view?usp=sharing" target="_blank">Resume</a></li>
             <li><a href="#project">Projects</a></li>
             <li><a href="#about">About</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
         </ul>
     </nav>
-    </div>
-    </div>
-    </header>
-   <nav class="desktop-nav">
-            <ul>
-                <li><a href="https://drive.google.com/file/d/17q6f06A3BBJEp6nL-3YaBBpk8D4W0jcL/view?usp=sharing" target="_blank">Resume</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
     <div class="w3-padding-large" id="main">
       <!-- Header/Home -->
       <header class="header" id="home">
@@ -177,10 +162,16 @@
     <a href="https://www.linkedin.com/in/harika-tanneru-676b96157/" class="linkedin-link" target="_blank"><span class="blue">LinkedIn</span></a>
     <a href="mailto:tanneruharika08@gmail.com" class="email-link" target="_blank">Email</a>
 </div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 
-
-  
-
-    
 </body>  
 </html>
