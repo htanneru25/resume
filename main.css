@@ -536,7 +536,11 @@ nav ul li a:hover {
    .topnav a {
     display: none;
 }
-
+.animate-text {
+    animation: none; /* Disable animation for mobile */
+    opacity: 1; /* Make the element visible */
+    transform: none; /* Remove any transform */
+  }
 .topnav a.icon {
     float: right;
     display: block;
@@ -789,3 +793,4 @@ nav ul li a:hover {
        color: white;
        z-index: 999;
    }
+}
