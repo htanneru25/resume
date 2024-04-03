@@ -16,6 +16,12 @@ menu-icon {
 .topnav {
     overflow: hidden;
     background-color: black;
+    position: fixed;
+    top: 0;
+    width:100%;
+    padding-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
   }
   
   .topnav a {
@@ -25,7 +31,7 @@ menu-icon {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
   }
   
   .topnav a:hover {
@@ -41,86 +47,33 @@ menu-icon {
   .topnav .icon {
     display: none;
   }
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
 .bar {
    width: 25px;
    height: 3px;
    color: white;
    margin: 4px 0;
+}
+.photo {
+    background-color: black;
+   
 }
 
 .header {
    display: flex;
-   justify-content: flex-end; /* Align the desktop nav to the right */
+   justify-content: center; /* Align the desktop nav to the right */
    padding: 10px;
    background-color: black;
 }
 
-.desktop-nav ul {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
-
-.desktop-nav li {
-   display: inline-block;
-   margin-left: 20px;
-}
-
-.desktop-nav a {
-   text-decoration: white;
-   color: black;
-}
-
-/* Sidebar styles */
-.menu-icon {
-   
-   cursor: pointer;
-   color: white;
-    
-}
-
-.bar {
-   width: 25px;
-   height: 3px;
-   background-color: black;
-   
-   margin: 4px 0;
-}
-
-.sidebar {
-   position: fixed;
-   top: 0;
-   left: -250px; /* Hide the sidebar off-screen by default */
-   height: 100%;
-   width: 60px; /* Set a small width for the sidebar */
-   background-color: white; /* Change background color to white */
-   overflow-x: hidden;
-   padding-top: 60px; /* Adjust as needed */
-   transition: left 0.5s; /* Use left property for animation */
-}
-
-.sidebar.open {
-   left: 0; /* Move the sidebar to the visible position */
-}
-
-.sidebar a {
-   color: white; /* Set text color to white */
-}
-
-
-.sidebar ul {
-   list-style-type: none;
-   padding: 0;
-}
-
-.sidebar li {
-   padding: 10px;
-}
-
-.sidebar a {
-   text-decoration: none;
-   color: black;
-}
 .content {
    margin-left: 250px;
    padding: 20px;
@@ -134,8 +87,10 @@ html {
 }
 
 .container {
-   display: flex;
-   height: 100%;
+    display: flex;
+   height: 100; /* Vertically center the content */
+  
+
 }
 
 .black-side {
@@ -147,7 +102,7 @@ html {
    flex: 1;
    background-color: white;
 }
-
+/*about,projects,resume */
 nav ul {
    list-style-type: none;
    margin: 0;
@@ -171,6 +126,7 @@ nav ul li a {
 nav ul li a:hover {
    background-color: black;
 }
+/*about,projects,resume ends*/
 .split {
    width: 50%;
    height: 80vh;
@@ -178,6 +134,23 @@ nav ul li a:hover {
    justify-content: center;
    align-items: center;
 }
+.animate-text {
+    display: inline-block;
+    animation: animate 4s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
 .portfolio {
    display: flex;
 }
@@ -202,21 +175,33 @@ nav ul li a:hover {
 
 
 .left {
-   background-color: darkgoldenrod;
+   background-color: black;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+   color: white;
 }
 
 .right {
-   background-color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 27.3px;
+
 }
+ 
+ 
 
 .darkgoldenrod-side {
    padding: 20px;
-   color: white;
+   color: darkgoldenrod;
    text-align: center;
+   font-weight: bold;
 }
 
 .white-side {
    padding: 20px;
+
 }
 
 .icon-section {
@@ -261,8 +246,9 @@ nav ul li a:hover {
 }
 
 .image {
-   max-width: 90%;
+   max-width: 50%;
    height: auto;
+   margin-top: 140px;
 }
 .sidebar-item-large {
    font-size: 20px; /* Adjust font size as needed */
@@ -271,19 +257,6 @@ nav ul li a:hover {
    align-items: center;
 }
 
-.circle {
-   width: 50px; /* Adjust circle size as needed */
-   height: 50px; /* Adjust circle size as needed */
-   border-radius: 50%; /* Create circular shape */
-   background-color: darkgoldenrod; /* Background color */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.circle i {
-   color: white; /* Icon color */
-}
 .icon-section {
    display: flex;
    flex-wrap: wrap; /* Allow icons to wrap to the next line */
@@ -315,9 +288,79 @@ nav ul li a:hover {
 .icon-container {
    margin: 20 20px; /* Adjust the margin to increase or decrease space between icons */
 }
+.parent-container {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    max-width: 800px;
+    margin: 0 auto; /* Centers the container horizontally */
+    margin-bottom: 26px;
+  }
+  
+  .education {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; /* Aligns education content to the center */
+    font-size: 24px;
+  }
+  
+  .degree {
+    text-align: center; /* Aligns degree content to the center */
+  }
+  
+  .degree h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: darkgoldenrod;
+  }
+  
+  .degree p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .degree strong {
+    font-weight: bold;
+  }
+  .certifications-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color:black;
+
+  }
+  
+  .certification {
+    text-align: center;
+    margin-top: -3px;
+    font-size: 28px;
+   color: black
+    
+  }
+  
+  .certification h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .certification p {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .certification img {
+    max-width: 100%;
+  }
+   
+  
+  
 .lightskyblue-section {
-   background-color: rgb(49, 101, 197);
-   height: 140px;
+   background-color: white;
+   height: 80px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -327,7 +370,8 @@ nav ul li a:hover {
 }
 
 .lightskyblue-section h2 {
-   color: white; /* Set the color of the heading to white */
+   color: black;
+   
 }
 .white-section {
    background-color: white;
@@ -358,18 +402,20 @@ nav ul li a:hover {
 }
 
 .Projects .image-side img {
-   width: 590px; /* Set the width of the image */
-   height: 500px; /* Maintain aspect ratio */
+   width: 420px; /* Set the width of the image */
+   height: 420px; /* Maintain aspect ratio */
    margin-right: 5px; /* Add space to the right of the image */
    margin-left: 20px; /* Add space to the left of the image */
    margin-top: 20px;
 }
 
-.Projects .text-side {
-   font-size: 26px;
-   color: black;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+  .Projects .text-side {
+    font-size: 26px;
+    color: black; /* Set the color of other text */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  
 
 .button {
    background-color: black; /* Green */
@@ -404,53 +450,51 @@ nav ul li a:hover {
    border-radius: 10px;
    padding: 20px;
    margin: 50px;
+   margin-top: 20px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.linkedin-section {
-   text-align: center;
-   margin-top: 15px; /* Adjust margin-top as needed */
-}
 
-.linkedin-link {
-   color: white;
-   text-decoration: none;
-   background-color: black; /* LinkedIn brand color */
-   padding: 10px 20px;
-   border-radius: 5px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   font-size: 32px;
-}
-
-.linkedin-link:hover {
-   background-color: black; /* Darker shade when hovered */
-}
-.contact-section {
-   display: flex;
-   align-items: center;
-}
-
-.linkedin-link,
-.email-link {
-   margin-right: 20px; 
-   color: blue;
-   text-decoration: none;
-   background-color: black; /* LinkedIn brand color */
-   padding: 10px 20px;
-   border-radius: 5px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   font-size: 32px;
-/* Adjust spacing between the links */
-}
-
-.email-link .email-logo {
-   display: none; /* Hide the email logo */
-}
-
-.email-link:hover .email-logo {
-   display: inline; /* Show the email logo on hover */
-}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Set width to 100% or an appropriate value */
+    height: 100px; /* Set height to an appropriate value */
+    font-size: 30px;
+  }
+  
+  .logo a {
+    margin: 0 10px; /* Adjust spacing between icons if needed */
+  }
+  
+  
+  .fa {
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 50px; /* Adjust font size as needed */
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%; /* Makes the icons circular */
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    background: black;
+    color: white;
+  }
+  
+  .fa-envelope {
+    background: black;
+    color: white;
+  }
+  
 .ht-logo {
-   position: absolute;
+   position: fixed;
    top: 10px;
    left: 10px;
    font-style: italic;
@@ -459,6 +503,18 @@ nav ul li a:hover {
    color: white; /* Set the color of the letters */
    z-index: 999; /* Ensure the HT is on top of other elements */
 }
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Apply animation to .ht-logo on hover */
+  .ht-logo:hover {
+    animation: shake 0.5s ease infinite; /* Shake animation */
+  }
 /* iPhone 14 Portrait View */
 @media only screen and (max-width: 600px) {
    body {
@@ -477,6 +533,18 @@ nav ul li a:hover {
      right: 0;
      top: 0;
    }
+   .topnav a {
+    display: none;
+}
+
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+
+.topnav.responsive {
+    position: relative;
+}
    .topnav.responsive a {
      float: none;
      display: block;
@@ -529,6 +597,7 @@ nav ul li a:hover {
    .white-side {
        padding: 2%; /* 2% padding relative to the width of the screen */
    }
+  
     .icon-section {
        display: flex;
        flex-direction: column;
@@ -667,6 +736,8 @@ nav ul li a:hover {
        border-radius: 8px; /* Decrease border radius for smaller buttons */
        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    }
+  
+
 
    .button a {
        color: white;
