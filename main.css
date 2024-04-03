@@ -633,7 +633,7 @@ nav ul li a:hover {
    }
 
    .image {
-       max-width: 100%; /* Ensure image fills the width of its container */
+       max-width: 50%; /* Ensure image fills the width of its container */
        height: auto; /* Maintain aspect ratio */
    }
    .sidebar-item-large {
