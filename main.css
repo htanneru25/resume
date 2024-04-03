@@ -565,10 +565,13 @@ nav ul li a:hover {
     transform: none; /* Remove any transform */
   }
   
-   .header {
-       display: none; /* Hide the header for mobile view */
-   }
-
+  .header {
+    display: block; /* Show the header for larger screens */
+  }
+  
+  .menu-icon {
+    display: block; /* Show the menu icon for larger screens */
+  }
    .content {
        margin-left: 0; /* Ensure content is not shifted for mobile view */
    }
