@@ -524,7 +524,7 @@ nav ul li a:hover {
 .menu-icon {
     display: block;
     position: fixed;
-    top: 20px;
+    top: 5px;
     left: 20px;
     z-index: 999;
   }
