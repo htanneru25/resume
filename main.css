@@ -1,44 +1,809 @@
-/* Menu icon for mobile view */
-.menu-icon {
-  display: block;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 999;
+body {
+    margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   background-color: black;
+   justify-content: center;
+   color: white;
+   font-family: Arial, sans-serif;
 }
 
-/* Responsive navigation */
-.topnav.responsive {
-  position: relative;
+menu-icon {
+   display: block; /* Display the menu icon by default */
+   cursor: pointer;
+   color: white;
+}
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width:100%;
+    padding-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: black;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+.bar {
+   width: 25px;
+   height: 3px;
+   color: white;
+   margin: 4px 0;
+}
+.photo {
+    background-color: black;
+   
 }
 
-.topnav.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
+.header {
+   display: flex;
+   justify-content: center; /* Align the desktop nav to the right */
+   padding: 10px;
+   background-color: black;
 }
 
-/* Styles for menu links */
-.topnav a {
-  display: none; /* Hide menu links by default */
+.content {
+   margin-left: 250px;
+   padding: 20px;
+   transition: margin-left 0.5s;
+}
+  
+
+html {
+   height: 100%;
+   margin: 0;
 }
 
-/* Styles for menu icon */
-.topnav a.icon {
-  float: right;
-  display: block;
+.container {
+    display: flex;
+   height: 100; /* Vertically center the content */
+  
+
 }
 
-/* Styles for menu links in responsive mode */
-.topnav.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
+.black-side {
+   flex: 1;
+   background-color: black;
 }
 
-/* Animation for text */
+.white-side {
+   flex: 1;
+   background-color: white;
+}
+/*about,projects,resume */
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: black;
+}
+
+nav ul li {
+   float: right;
+}
+
+nav ul li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 16px 16px;
+   text-decoration: none;
+}
+
+nav ul li a:hover {
+   background-color: black;
+}
+/*about,projects,resume ends*/
+.split {
+   width: 50%;
+   height: 80vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 .animate-text {
-  animation: none; /* Disable animation for mobile */
-  opacity: 1; /* Make the element visible */
-  transform: none; /* Remove any transform */
+    display: inline-block;
+    animation: animate 4s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+.portfolio {
+   display: flex;
+}
+
+.split.left {
+   width: 48.5%;
+   
+}
+
+.split.right {
+   width: 51.5%;
+}
+
+.blue {
+   color: blue;
+}
+.white-side p {
+   color: black;
+   font-size: 27.3px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+.left {
+   background-color: black;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+   color: white;
+}
+
+.right {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 27.3px;
+
+}
+ 
+ 
+
+.darkgoldenrod-side {
+   padding: 20px;
+   color: darkgoldenrod;
+   text-align: center;
+   font-weight: bold;
+}
+
+.white-side {
+   padding: 20px;
+
+}
+
+.icon-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.icon-row {
+   display: flex;
+   justify-content: space-between; /* Evenly spread icons */
+   flex-wrap: wrap; /* Wrap icons to next line */
+   margin-bottom: 20px;
+   
+}
+
+.icon-container {
+   width: 23%; /* Adjust width to evenly spread icons */
+   text-align: center;
+}
+
+.icon-container img {
+   max-width: 100%;
+   height: auto;
+}
+
+
+.content {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 20px;
+}
+
+.about-content {
+   flex: 1;
+}
+
+.image-container {
+   flex: 1;
+   text-align: center;
+}
+
+.image {
+   max-width: 50%;
+   height: auto;
+   margin-top: 140px;
+}
+.sidebar-item-large {
+   font-size: 20px; /* Adjust font size as needed */
+   padding: 15px; /* Adjust padding as needed */
+   display: flex;
+   align-items: center;
+}
+
+.icon-section {
+   display: flex;
+   flex-wrap: wrap; /* Allow icons to wrap to the next line */
+   justify-content: space-between; /* Evenly distribute icons */
+}
+
+.icon-container {
+   width: 48%; /* Adjust width to fit two icons side by side */
+   text-align: center;
+   margin-bottom: 20px; /* Add margin between icons */
+}
+
+.icon-container img {
+   width: 100px; /* Adjust icon size */
+   height: auto;
+}
+.icon-section {
+   padding: 20px; /* Add padding to the icon section */
+}
+
+.icon-row {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 40px;
+   margin-bottom: 20px; /* Increase margin between rows */
+  
+}
+
+.icon-container {
+   margin: 20 20px; /* Adjust the margin to increase or decrease space between icons */
+}
+.parent-container {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    max-width: 800px;
+    margin: 0 auto; /* Centers the container horizontally */
+    margin-bottom: 26px;
+  }
+  
+  .education {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; /* Aligns education content to the center */
+    font-size: 24px;
+  }
+  
+  .degree {
+    text-align: center; /* Aligns degree content to the center */
+  }
+  
+  .degree h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: darkgoldenrod;
+  }
+  
+  .degree p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .degree strong {
+    font-weight: bold;
+  }
+  .certifications-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color:black;
+
+  }
+  
+  .certification {
+    text-align: center;
+    margin-top: -3px;
+    font-size: 28px;
+   color: black
+    
+  }
+  
+  .certification h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .certification p {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .certification img {
+    max-width: 100%;
+  }
+   
+  
+  
+.lightskyblue-section {
+   background-color: white;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 19px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+   
+}
+
+.lightskyblue-section h2 {
+   color: black;
+   
+}
+.white-section {
+   background-color: white;
+   height: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 19px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.white-section .image-container {
+   display: flex;
+   justify-content: center;
+   justify-content: space-around; /* Add space between the images */
+}
+
+.white-section .image-container img {
+   width: 100px; /* Set a fixed width for each image */
+   height: 100px; /* Set a fixed height for each image */
+   margin-right: 10px; /* Add some space between each image */
+}
+
+.Projects .half-split {
+   display: flex;
+   align-items: center;
+   background-color: white;
+}
+
+.Projects .image-side img {
+   width: 420px; /* Set the width of the image */
+   height: 420px; /* Maintain aspect ratio */
+   margin-right: 5px; /* Add space to the right of the image */
+   margin-left: 20px; /* Add space to the left of the image */
+   margin-top: 20px;
+}
+
+  .Projects .text-side {
+    font-size: 26px;
+    color: black; /* Set the color of other text */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  
+
+.button {
+   background-color: black; /* Green */
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 24px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 12px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.button a {
+   color: white;
+   text-decoration: none; /* Remove underline from links within buttons */
+}
+
+.black-background {
+   background-color: black;
+   color: white; /* Set text color to white for better visibility */
+   padding: 50px 70px; /* Adjusted padding */
+   text-align: center; /* Add padding to create space between content and edges */
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 32px;
+}
+
+.quote-box {
+   background-color: rgb(176, 176, 245);
+   border-radius: 10px;
+   padding: 20px;
+   margin: 50px;
+   margin-top: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Set width to 100% or an appropriate value */
+    height: 100px; /* Set height to an appropriate value */
+    font-size: 30px;
+  }
+  
+  .logo a {
+    margin: 0 10px; /* Adjust spacing between icons if needed */
+  }
+  
+  
+  .fa {
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 50px; /* Adjust font size as needed */
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%; /* Makes the icons circular */
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    background: black;
+    color: white;
+  }
+  
+  .fa-envelope {
+    background: black;
+    color: white;
+  }
+  
+.ht-logo {
+   position: fixed;
+   top: 10px;
+   left: 10px;
+   font-style: italic;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;/* Use Montserrat font for the letters HT */
+   font-size: 45px; /* Adjust font size as needed */
+   color: white; /* Set the color of the letters */
+   z-index: 999; /* Ensure the HT is on top of other elements */
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Apply animation to .ht-logo on hover */
+  .ht-logo:hover {
+    animation: shake 0.5s ease infinite; /* Shake animation */
+  }
+/* iPhone 14 Portrait View */
+@media only screen and (max-width: 600px) {
+   body {
+       font-size: 14px; /* Adjust the base font size for better readability on smaller screens */
+   }
+ /* Menu icon for mobile view */
+.menu-icon {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+  }
+  
+  /* Responsive navigation */
+  .topnav.responsive {
+    position: relative;
+  }
+  
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Styles for menu links */
+  .topnav a {
+    display: none; /* Hide menu links by default */
+  }
+  
+  /* Styles for menu icon */
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  
+  /* Styles for menu links in responsive mode */
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Animation for text */
+  .animate-text {
+    animation: none; /* Disable animation for mobile */
+    opacity: 1; /* Make the element visible */
+    transform: none; /* Remove any transform */
+  }
+  
+   .header {
+       display: none; /* Hide the header for mobile view */
+   }
+
+   .content {
+       margin-left: 0; /* Ensure content is not shifted for mobile view */
+   }
+   .container {
+       flex-direction: column; /* Stack container elements vertically */
+   }
+  .menu-icon {
+       display: none;
+   }
+
+   .sidebar {
+       left: 0; /* Show the sidebar by default on larger screens */
+   }
+
+   .content {
+       margin-left: 0;
+   }
+
+   nav ul li {
+       float: none; /* Remove floating for navigation items */
+       text-align: center; /* Center align navigation items */
+   }
+
+   .split {
+       height: auto; /* Let the split section adjust its height based on content */
+   }
+   .portfolio {
+      display: block; /* Change display to block to stack elements vertically */
+   }
+
+   .split.left,
+   .split.right {
+       width: 100%; /* Set width to 100% to make each split take up full width */
+   }
+   .darkgoldenrod-side {
+       padding: 2%; /* 2% padding relative to the width of the screen */
+       color: white;
+       text-align: center;
+   }
+
+   .white-side {
+       padding: 2%; /* 2% padding relative to the width of the screen */
+   }
+  
+    .icon-section {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .icon-row {
+       display: flex;
+       flex-wrap: wrap; /* Wrap icons to the next line */
+       justify-content: center; /* Center icons horizontally */
+       margin-bottom: 20px;
+   }
+   .icon-row > * {
+    width: 50%;
+  }
+   .icon-container {
+       width: 45%; /* Adjust width to evenly spread icons */
+       text-align: center;
+   }
+   .content {
+       display: flex;
+       flex-direction: column; /* Stack elements vertically */
+       align-items: center; /* Center align items horizontally */
+       padding: 20px;
+   }
+
+   .about-content, .image-container {
+       flex: none; /* Disable flex grow for these items */
+       width: 100%; /* Set width to fill the screen */
+       text-align: center; /* Center align text and content */
+   }
+
+   .image {
+       max-width: 75%; /* Ensure image fills the width of its container */
+       height: auto; /* Maintain aspect ratio */
+   }
+   .sidebar-item-large {
+       font-size: 16px; /* Adjust font size for mobile view */
+       padding: 10px; /* Adjust padding for mobile view */
+       display: flex;
+       align-items: center;
+   }
+    .icon-section {
+       display: flex;
+       flex-direction: column; /* Stack icons vertically */
+       align-items: center; /* Center align icons horizontally */
+   }
+
+   .icon-container {
+       width: 100%; /* Adjust width to fill the width of the container */
+       text-align: center;
+       margin-bottom: 20px; /* Add margin between icons */
+   }
+
+   .icon-container img {
+       width: 80px; /* Adjust icon size for mobile view */
+       height: auto;
+   }
+   .icon-row {
+       display: flex;
+       flex-wrap: wrap; /* Allow icons to wrap to the next line */
+       justify-content: center; /* Center align icons horizontally */
+       margin-top: 20px; /* Reduce top margin for spacing */
+       margin-bottom: 10px; /* Reduce bottom margin for spacing */
+   }
+
+   .icon-container {
+       margin: 10px; /* Adjust margin to increase or decrease space between icons */
+   }
+
+   .lightskyblue-section {
+       background-color: rgb(49, 101, 197);
+       height: auto; /* Let the height adjust based on content */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 16px; /* Adjust font size for mobile view */
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+
+   .lightskyblue-section h2 {
+       color: white; /* Set the color of the heading to white */
+       margin: 0; /* Remove default margin to better fit the container */
+   }
+   .white-section {
+       background-color: white;
+       height: auto; /* Let the height adjust based on content */
+       display: flex;
+       flex-direction: column; /* Stack elements vertically */
+       justify-content: center;
+       align-items: center;
+       font-size: 16px; /* Adjust font size for mobile view */
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       padding: 20px; /* Add padding for better spacing */
+   }
+
+   .white-section .image-container {
+       display: flex;
+       flex-wrap: wrap; /* Allow images to wrap to the next line */
+       justify-content: center;
+       margin-top: 10px; /* Add margin between image container and other content */
+   }
+
+   .white-section .image-container img {
+       width: 80px; /* Adjust image width for mobile view */
+       height: 80px; /* Adjust image height for mobile view */
+       margin: 5px; /* Adjust margin for spacing between images */
+   }
+   .Projects .half-split {
+       display: block; /* Change display to block to make it stack vertically */
+       background-color: white;
+       padding: 20px; /* Add padding for spacing */
+   }
+
+   .Projects .image-side img {
+       width: 100%; /* Set image width to fill the container */
+       height: auto; /* Maintain aspect ratio */
+       margin: 0; /* Remove margin to fit the image within the container */
+   }
+
+   .Projects .text-side {
+       font-size: 16px; /* Adjust font size for mobile view */
+       color: black;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       margin-top: 20px; /* Add margin for spacing */
+   }
+   .button {
+       background-color: black; /* Green */
+       border: none;
+       color: white;
+       padding: 12px 24px; /* Decrease padding for smaller screens */
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 18px; /* Decrease font size for smaller screens */
+       margin: 8px 4px; /* Increase margin for better spacing */
+       cursor: pointer;
+       border-radius: 8px; /* Decrease border radius for smaller buttons */
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+  
+
+
+   .button a {
+       color: white;
+       text-decoration: none; /* Remove underline from links within buttons */
+   }
+   .black-background {
+       background-color: black;
+       color: white; /* Set text color to white for better visibility */
+       padding: 30px; /* Adjusted padding for mobile view */
+       text-align: center; /* Center align content */
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-size: 24px; /* Decreased font size for mobile view */
+       margin: 20px; /* Adjusted margin for better spacing */
+   }
+
+   .quote-box {
+       background-color: rgb(176, 176, 245);
+       border-radius: 10px;
+       padding: 15px; /* Adjusted padding for mobile view */
+       margin: 20px; /* Adjusted margin for better spacing */
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+    .linkedin-section {
+       text-align: center;
+       margin-top: 10px; /* Adjusted margin-top for mobile view */
+   }
+
+   .linkedin-link,
+   .email-link {
+       margin-right: 10px; /* Adjusted margin between the links for mobile view */
+       padding: 8px 16px; /* Adjusted padding for mobile view */
+       font-size: 16px; /* Decreased font size for mobile view */
+   }
+
+   .contact-section {
+       display: flex;
+       flex-wrap: wrap; /* Allow contact links to wrap on smaller screens */
+       justify-content: center; /* Center align contact links horizontally */
+       margin-top: 10px; /* Adjusted margin-top for mobile view */
+   }
+
+   .ht-logo {
+       position: absolute;
+       top: 10px;
+       left: 10px;
+       font-style: italic;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-size: 24px; /* Decreased font size for mobile view */
+       color: white;
+       z-index: 999;
+   }
 }
