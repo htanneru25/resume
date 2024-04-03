@@ -565,7 +565,7 @@ nav ul li a:hover {
     display: block; /* Show the header for larger screens */
   }
   .animate-text {
-    animation: none; /* Disable animation for mobile */
+    /* Disable animation for mobile */
     opacity: 1; /* Make the element visible */
     transform: none; /* Remove any transform */
   }
@@ -687,7 +687,7 @@ nav ul li a:hover {
    }
 
    .lightskyblue-section {
-       background-color: white
+       background-color: white;
        height: auto; /* Let the height adjust based on content */
        display: flex;
        justify-content: center;
@@ -800,7 +800,7 @@ nav ul li a:hover {
    }
 
    .ht-logo {
-       position: absolute;
+       position: fixed;
        top: 10px;
        left: 10px;
        font-style: italic;
