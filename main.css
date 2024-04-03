@@ -559,16 +559,16 @@ nav ul li a:hover {
   }
   
   /* Animation for text */
+  
+  
+  .header {
+    display: block; /* Show the header for larger screens */
+  }
   .animate-text {
     animation: none; /* Disable animation for mobile */
     opacity: 1; /* Make the element visible */
     transform: none; /* Remove any transform */
   }
-  
-  .header {
-    display: block; /* Show the header for larger screens */
-  }
-  
   .menu-icon {
     display: block; /* Show the menu icon for larger screens */
   }
