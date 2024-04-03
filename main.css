@@ -806,4 +806,16 @@ nav ul li a:hover {
        color: white;
        z-index: 999;
    }
+   @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Apply animation to .ht-logo on hover */
+  .ht-logo:hover {
+    animation: shake 0.5s ease infinite; /* Shake animation */
+  }
 }
