@@ -3,18 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VPC Details</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>VPC with servers in private subnets and NAT</title>
     <style>
         body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            padding: 50px;
-        }
+    margin: 0;
+   padding: 0;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background-color: black;
+   justify-content: center;
+   color: white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 24px;
+}
+       
+.darkgoldenrod {
+    color: darkgoldenrod;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+
     </style>
 </head>
 <body>
-    <h1>VPC with servers in private subnets and NAT</h1>
-    <p>Designed and implemented a Virtual Private Cloud (VPC) architecture for a 2-tier application, utilizing private subnets for enhanced security and network isolation.</p>
+    <div class="ht-logo">HT</div>
+    <nav>
+        <ul class="topnav" id="myTopnav">
+            <li><a href="#contact">Contact</a></li>   
+            <li><a href="https://drive.google.com/file/d/1lMTscLlR8y495qC7PQ5FYVnjLhaNKwnP/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <div class="logo" id="contact">
+        <a href="https://www.linkedin.com/in/harikatanneru/ " class="fa fa-linkedin"></a>
+        <a href="mailto:tanneruharika08@gmail.com" class="fa fa-envelope"></a>
+    </div>
+    <center><h1><span class="darkgoldenrod">VPC with servers in private subnets and NAT</span></h1>
+    
+        <p><span class="darkgoldenrod">Purpose:</span>    The purpose of this project is to design and implement a secure and scalable infrastructure for a 2-tier application within a Virtual Private Cloud (VPC). 
+            By utilizing private subnets, NAT Gateway, and auto-scaling groups, the aim is to enhance security, network isolation, and ensure high availability of the application while enabling seamless internet access for necessary components.</p></center>
+        <br>
+        <center><h2><span class="darkgoldenrod">Solution</span></h2>
+    <p><span class="darkgoldenrod">VPC Architecture Design: </span>A Virtual Private Cloud (VPC) was designed to provide an isolated network environment for the application. Private subnets were utilized to segregate different tiers of the application for enhanced security.
+    The VPC was logically divided into public and private subnets, with public subnets containing resources accessible from the internet and private subnets housing backend servers and databases.
+<br><br>      
+<span class="darkgoldenrod">NAT Gateway Configuration: </span>To allow servers in the private subnets to access the internet securely, a NAT Gateway was configured within the VPC.
+The NAT Gateway allows outbound internet traffic from the private subnets while preventing inbound traffic initiated from the internet, thus maintaining a secure network environment.
+ <br><br>       
+ <span class="darkgoldenrod">Auto-Scaling Groups Implementation: </span>Auto-scaling groups were implemented to manage the lifecycle of EC2 instances running in the private subnets.
+ By defining scaling policies based on metrics such as CPU utilization or network traffic, the auto-scaling groups automatically adjust the number of EC2 instances to meet demand, ensuring scalability and high availability of the application. </p>
+ <br><br> 
+ <div class="quote-box">
+    <p>" This solution provides a robust and scalable infrastructure for the 2-tier application within a secure Virtual Private Cloud environment. 
+        It ensures efficient management of resources, enhances security through network isolation, and maintains high availability by dynamically scaling resources based on demand."</p>
+    </div>
+    <footer>
+        <center><p>Made by Harika with ❤️</p></center>
+    </footer>
 </body>
 </html>
