@@ -3,18 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Cloud Cost Optimization Details</title>
     <style>
         body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            padding: 50px;
-        }
+    margin: 0;
+   padding: 0;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background-color: black;
+   justify-content: center;
+   color: white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 24px;
+}
+       
+.darkgoldenrod {
+    color: darkgoldenrod;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+
     </style>
 </head>
 <body>
-    <h1>Cloud Cost Optimization</h1>
-    <p>Implemented an automated solution using AWS Lambda to identify and delete stale Elastic Block Store (EBS) snapshots, resulting in significant cost savings and improved resource management.</p>
-</body>
+    <div class="ht-logo">HT</div>
+    <nav>
+        <ul class="topnav" id="myTopnav">
+            <li><a href="#contact">Contact</a></li>   
+            <li><a href="https://drive.google.com/file/d/1lMTscLlR8y495qC7PQ5FYVnjLhaNKwnP/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <br>
+    <center><h1><span class="darkgoldenrod">Cloud Cost Optimization</span></h1>
+    
+    <p><span class="darkgoldenrod">Purpose:</span>    The purpose of this automation is to manage Amazon Elastic Block Store (EBS) snapshots within an AWS environment efficiently. 
+        EBS snapshots are essential for data backup and disaster recovery, but their manual management can be time-consuming and error-prone as the number of snapshots grows. 
+        This automation aims to streamline the process by identifying and removing unnecessary snapshots, optimizing storage usage, and reducing operational overhead.</p></center>
+    <br>
+    <center><h2><span class="darkgoldenrod">Solution</span></h2>
+    <p>The solution employs an AWS Lambda function written in Python, utilizing the boto3 library to interact with AWS services programmatically. Here's how it operates:
+<br><br>
+<span class="darkgoldenrod">Snapshot Retrieval: </span>Using the describe_snapshots API, the function fetches information about all EBS snapshots owned by the AWS account.
+<br><br>      
+<span class="darkgoldenrod">Active Instance Identification: </span>The function then queries running EC2 instances via the describe_instances API to determine active instance IDs.
+ <br><br>       
+ <span class="darkgoldenrod">Snapshot Analysis: </span>It iterates through each snapshot, examining its association with volumes and instances.
+ <br><br>      
+ <span class="darkgoldenrod">Orphaned Snapshot Handling: </span>Snapshots not associated with any volume are deemed orphaned and are promptly deleted.
+ <br><br>       
+ <span class="darkgoldenrod">Unused Snapshot Handling: </span>Snapshots associated with volumes not attached to running instances are considered unused and are deleted to free up storage resources.
+<br><br>      
+<span class="darkgoldenrod">Error Handling:</span> The function incorporates error handling to gracefully manage unexpected situations, such as missing volumes or API errors</p></center>
+        <div class="quote-box">
+            <p>"By identifying and removing obsolete snapshots, you'll reduce the amount of stored data in Amazon S3, which is the underlying storage for EBS snapshots. 
+                Since AWS charges for S3 storage usage, eliminating unnecessary snapshots can lead to direct cost savings."</p>
+            </div>
+        </div>
+        <div class="logo" id="contact">
+          <a href="https://www.linkedin.com/in/harikatanneru/ " class="fa fa-linkedin"></a>
+          <a href="mailto:tanneruharika08@gmail.com" class="fa fa-envelope"></a>
+        </div>
+      </div>
+      <footer>
+          <center><p>Made by Harika with ❤️</p></center>
+      </footer>
+      
+       
+    
+        
+    </body>
 </html>
