@@ -1,12 +1,13 @@
 body {
     margin: 0;
    padding: 0;
-   font-family: Arial, sans-serif;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    background-color: black;
    justify-content: center;
    color: white;
-   font-family: Arial, sans-serif;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 menu-icon {
    display: block; /* Display the menu icon by default */
@@ -299,7 +300,7 @@ nav ul li a:hover {
   .education {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center; /* Aligns education content to the center */
-    font-size: 24px;
+    font-size: 26px;
   }
   
   .degree {
@@ -307,13 +308,13 @@ nav ul li a:hover {
   }
   
   .degree h3 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 5px;
     color: darkgoldenrod;
   }
   
   .degree p {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
   }
   
@@ -435,6 +436,19 @@ nav ul li a:hover {
    color: white;
    text-decoration: none; /* Remove underline from links within buttons */
 }
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  
+  .button:hover {opacity: 1}
 
 .black-background {
    background-color: black;
@@ -515,6 +529,21 @@ nav ul li a:hover {
   .ht-logo:hover {
     animation: shake 0.5s ease infinite; /* Shake animation */
   }
+  footer {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+footer p {
+    font-size: 20px; /* Adjust font size as needed */
+    color: #888; /* Adjust color as needed */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 /* iPhone 14 Portrait View */
 @media only screen and (max-width: 600px) {
    body {
@@ -763,6 +792,20 @@ nav ul li a:hover {
        color: white;
        text-decoration: none; /* Remove underline from links within buttons */
    }
+   .button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  
+  .button:hover {opacity: 1}
+
    .black-background {
        background-color: black;
        color: white; /* Set text color to white for better visibility */
@@ -821,4 +864,7 @@ nav ul li a:hover {
   .ht-logo:hover {
     animation: shake 0.5s ease infinite; /* Shake animation */
   }
+  footer p {
+    font-size: 12px; /* Decreased font size for mobile view */
+}
 }
