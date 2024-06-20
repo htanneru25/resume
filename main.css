@@ -403,8 +403,8 @@ nav ul li a:hover {
 }
 
 .Projects .image-side img {
-   width: 420px; /* Set the width of the image */
-   height: 420px; /* Maintain aspect ratio */
+   width: 200px; /* Set the width of the image */
+   height: 200px; /* Maintain aspect ratio */
    margin-right: 5px; /* Add space to the right of the image */
    margin-left: 20px; /* Add space to the left of the image */
    margin-top: 20px;
